@@ -1,0 +1,132 @@
+<?php
+
+namespace Solvice\Http;
+
+use \GuzzleHttp\Client as GuzzleClient;
+use Solvice\Job\JobFactory;
+use Solvice\Solver\Response;
+use Solvice\Solver\Solver;
+
+/**
+ * Class Client
+ *
+ * @package Solvice\Http
+ */
+class Client
+{
+    /**
+     * @var GuzzleClient
+     */
+    private $client;
+
+    /**
+     * Client constructor.
+     *
+     * @param $apiEndpoint
+     * @param $username
+     * @param $password
+     */
+    public function __construct($apiEndpoint, $username, $password)
+    {
+        $this->client = new GuzzleClient([
+            'base_uri' => $apiEndpoint,
+            'headers' => ['Content-Type' => 'application/json'],
+            'auth' => [$username, $password],
+        ]);
+    }
+
+    /**
+     * @param Solver $solver
+     *
+     * @return string
+     */
+    public function solve(Solver $solver)
+    {
+        $response = $this->request('POST', '/v1/solve', [
+            'body' => $solver->toJson(),
+        ]);
+
+        return Response::fromJson($response, $solver);
+    }
+
+    /**
+     * @return string
+     */
+    public function jobs()
+    {
+        return $this->request('GET', '/jobs');
+    }
+
+    /**
+     * @param $id
+     *
+     * @return string
+     */
+    public function job($id)
+    {
+        return $this->request('GET', '/jobs/'.$id);
+    }
+
+    /**
+     * @return string
+     */
+    public function queue()
+    {
+        return $this->request('GET', '/queue');
+    }
+
+    /**
+     * @param $id
+     *
+     * @return bool
+     */
+    public function jobIsSolved($id)
+    {
+        $job = $this->fetchJob($id);
+
+        if ($job['status'] === 'SOLVED') {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $id
+     *
+     * @return mixed
+     */
+    public function fetchJob($id)
+    {
+        $response = $this->job($id);
+        $jobData = json_decode($response, true);
+
+        if ($jobData === null) {
+            // could not decode job
+            // throw new InvalidSolviceJobException();
+        }
+
+        return JobFactory::buildJob($jobData['solver'], $jobData);
+
+        return $jobData;
+    }
+
+    /**
+     * @param       $method
+     * @param       $path
+     * @param array $options
+     *
+     * @return string
+     */
+    private function request($method, $path, $options = [])
+    {
+        try {
+            $response = $this->client->request($method, $path, $options);
+
+            return $response->getBody()->getContents();
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            // throw new SolviceRequestException();
+        }
+    }
+}

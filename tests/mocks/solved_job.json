@@ -1,0 +1,485 @@
+{
+  "id": "57cbe80538ae9eb993983e31",
+  "score": {
+    "hardScore": 0,
+    "softScore": 0,
+    "feasible": true
+  },
+  "unresolved": [
+    {
+      "name": "No Matching Keyword Conflict",
+      "value": 0,
+      "level": "SOFT"
+    },
+    {
+      "name": "Matching Score",
+      "value": 0,
+      "level": "SOFT"
+    }
+  ],
+  "status": "SOLVED",
+  "username": "username",
+  "solver": "CLUST",
+  "clusters": [
+    {
+      "name": "Cluster 1",
+      "size": 3,
+      "cluster_type": "single_paper"
+    },
+    {
+      "name": "Cluster 2",
+      "size": 1,
+      "cluster_type": "single_paper"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Single Paper 1",
+      "keywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "cluster_type": "single_paper"
+    },
+    {
+      "name": "Single Paper 2",
+      "keywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "cluster_type": "single_paper"
+    },
+    {
+      "name": "Single Paper 3",
+      "keywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "cluster_type": "single_paper"
+    },
+    {
+      "name": "Single Paper 4",
+      "keywords": [
+        {
+          "name": "sig_5",
+          "priority": 0
+        },
+        {
+          "name": "sig_6",
+          "priority": 0
+        }
+      ],
+      "cluster_type": "single_paper"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "id": 0,
+      "indexInCluster": 0,
+      "cluster": {
+        "name": "Cluster 1",
+        "size": 3,
+        "cluster_type": "single_paper"
+      },
+      "entity": {
+        "name": "Single Paper 1",
+        "keywords": [
+          {
+            "name": "sig_1",
+            "priority": 0
+          },
+          {
+            "name": "sig_2",
+            "priority": 0
+          }
+        ],
+        "cluster_type": "single_paper"
+      },
+      "entityRange": [
+        {
+          "name": "Single Paper 1",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 2",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 3",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 4",
+          "keywords": [
+            {
+              "name": "sig_5",
+              "priority": 0
+            },
+            {
+              "name": "sig_6",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        }
+      ],
+      "clusteringKeywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "clusteringType": "single_paper",
+      "keywords": [
+        "sig_1",
+        "sig_2"
+      ]
+    },
+    {
+      "id": 2,
+      "id": 1,
+      "indexInCluster": 1,
+      "cluster": {
+        "name": "Cluster 1",
+        "size": 3,
+        "cluster_type": "single_paper"
+      },
+      "entity": {
+        "name": "Single Paper 2",
+        "keywords": [
+          {
+            "name": "sig_1",
+            "priority": 0
+          },
+          {
+            "name": "sig_2",
+            "priority": 0
+          }
+        ],
+        "cluster_type": "single_paper"
+      },
+      "entityRange": [
+        {
+          "name": "Single Paper 1",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 2",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 3",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 4",
+          "keywords": [
+            {
+              "name": "sig_5",
+              "priority": 0
+            },
+            {
+              "name": "sig_6",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        }
+      ],
+      "clusteringKeywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "clusteringType": "single_paper",
+      "keywords": [
+        "sig_1",
+        "sig_2"
+      ]
+    },
+    {
+      "id": 3,
+      "id": 2,
+      "indexInCluster": 2,
+      "cluster": {
+        "name": "Cluster 1",
+        "size": 3,
+        "cluster_type": "single_paper"
+      },
+      "entity": {
+        "name": "Single Paper 4",
+        "keywords": [
+          {
+            "name": "sig_5",
+            "priority": 0
+          },
+          {
+            "name": "sig_6",
+            "priority": 0
+          }
+        ],
+        "cluster_type": "single_paper"
+      },
+      "entityRange": [
+        {
+          "name": "Single Paper 1",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 2",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 3",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 4",
+          "keywords": [
+            {
+              "name": "sig_5",
+              "priority": 0
+            },
+            {
+              "name": "sig_6",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        }
+      ],
+      "clusteringKeywords": [
+        {
+          "name": "sig_5",
+          "priority": 0
+        },
+        {
+          "name": "sig_6",
+          "priority": 0
+        }
+      ],
+      "clusteringType": "single_paper",
+      "keywords": [
+        "sig_5",
+        "sig_6"
+      ]
+    },
+    {
+      "id": 4,
+      "id": 3,
+      "indexInCluster": 0,
+      "cluster": {
+        "name": "Cluster 2",
+        "size": 1,
+        "cluster_type": "single_paper"
+      },
+      "entity": {
+        "name": "Single Paper 3",
+        "keywords": [
+          {
+            "name": "sig_1",
+            "priority": 0
+          },
+          {
+            "name": "sig_2",
+            "priority": 0
+          }
+        ],
+        "cluster_type": "single_paper"
+      },
+      "entityRange": [
+        {
+          "name": "Single Paper 1",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 2",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 3",
+          "keywords": [
+            {
+              "name": "sig_1",
+              "priority": 0
+            },
+            {
+              "name": "sig_2",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        },
+        {
+          "name": "Single Paper 4",
+          "keywords": [
+            {
+              "name": "sig_5",
+              "priority": 0
+            },
+            {
+              "name": "sig_6",
+              "priority": 0
+            }
+          ],
+          "cluster_type": "single_paper"
+        }
+      ],
+      "clusteringKeywords": [
+        {
+          "name": "sig_1",
+          "priority": 0
+        },
+        {
+          "name": "sig_2",
+          "priority": 0
+        }
+      ],
+      "clusteringType": "single_paper",
+      "keywords": [
+        "sig_1",
+        "sig_2"
+      ]
+    }
+  ],
+  "solve_duration": 10,
+  "solve_started": "2016-09-04T09:23:18.089"
+}

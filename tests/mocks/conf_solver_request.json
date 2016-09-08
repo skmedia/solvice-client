@@ -1,0 +1,52 @@
+{
+  "solver": "CONF",
+  "solve_duration": 0,
+  "options": {
+    "max_chair": 1
+  },
+  "clusters": [
+    {
+      "name": "Session Cluster 1",
+      "cluster_type": "single_paper",
+      "population": 5000,
+      "presenters": [
+        "P1"
+      ],
+      "attributes": [
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "name": "room_1",
+      "capacity": 500,
+      "attributes": [
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "9h-10h_2018-09-01",
+      "index": 0,
+      "date": "2018-09-01"
+    }
+  ],
+  "presenters": [
+    {
+      "name": "P0"
+    },
+    {
+      "name": "P1"
+    },
+    {
+      "name": "P2"
+    }
+  ],
+  "room_slots": [
+    {
+      "name": "room_1 9h-10h_2018-09-01",
+      "room": "room_1",
+      "slot": "9h-10h_2018-09-01"
+    }
+  ]
+}

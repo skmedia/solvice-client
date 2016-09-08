@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    <script type="text/javascript">
+    function loadExternalCodeSnippets() {
+        Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+            var src = pre.getAttribute('data-src');
+            var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+            var language = 'php';
+
+            var code = document.createElement('code');
+            code.className = 'language-' + language;
+
+            pre.textContent = '';
+
+            code.textContent = 'Loading…';
+
+            pre.appendChild(code);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', src, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+
+                    if (xhr.status < 400 && xhr.responseText) {
+                        code.textContent = xhr.responseText;
+
+                        Prism.highlightElement(code);
+                    }
+                    else if (xhr.status >= 400) {
+                        code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                    }
+                    else {
+                        code.textContent = '✖ Error: File does not exist or is empty';
+                    }
+                }
+            };
+
+            xhr.send(null);
+        });
+    }
+
+    $(document).ready(function(){
+        loadExternalCodeSnippets();
+    });
+    $('#source-view').on('shown', function () {
+        loadExternalCodeSnippets();
+    })
+</script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/Solvice.html">\Solvice</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">311</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-770593109"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-770593109" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-365341037"></a>
+                                <a href="../namespaces/Solvice.html" style="margin-left: 30px; padding-left: 0">Solvice</a>
+            </div>
+            <div id="namespace-365341037" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-749818140"></a>
+                                <a href="../namespaces/Solvice.Collection.html" style="margin-left: 30px; padding-left: 0">Collection</a>
+            </div>
+            <div id="namespace-749818140" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Collection.AttributeCollection.html">AttributeCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.ClusterAssignmentsCollection.html">ClusterAssignmentsCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.ClusterCollection.html">ClusterCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.Collection.html">Collection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.ConferenceAssignmentsCollection.html">ConferenceAssignmentsCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.ConferenceClusterCollection.html">ConferenceClusterCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.EntityCollection.html">EntityCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.KeywordCollection.html">KeywordCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.PresenterCollection.html">PresenterCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.RoomCollection.html">RoomCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.RoomSlotCollection.html">RoomSlotCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.SlotCollection.html">SlotCollection</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Collection.UnresolvedItemCollection.html">UnresolvedItemCollection</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-521281036"></a>
+                                <a href="../namespaces/Solvice.Entity.html" style="margin-left: 30px; padding-left: 0">Entity</a>
+            </div>
+            <div id="namespace-521281036" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1516638523"></a>
+                                <a href="../namespaces/Solvice.Entity.Assignment.html" style="margin-left: 30px; padding-left: 0">Assignment</a>
+            </div>
+            <div id="namespace-1516638523" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Entity.Assignment.ClusterAssignment.html">ClusterAssignment</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Assignment.ConferenceClusterAssignment.html">ConferenceClusterAssignment</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Entity.Attribute.html">Attribute</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Cluster.html">Cluster</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.ConferenceCluster.html">ConferenceCluster</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.ConferenceSolverOptions.html">ConferenceSolverOptions</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Entity.html">Entity</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Keyword.html">Keyword</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Presenter.html">Presenter</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Room.html">Room</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.RoomSlot.html">RoomSlot</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Score.html">Score</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.Slot.html">Slot</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.UnresolvedItem.html">UnresolvedItem</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Entity.UnresolvedItemLevel.html">UnresolvedItemLevel</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1473175248"></a>
+                                <a href="../namespaces/Solvice.Http.html" style="margin-left: 30px; padding-left: 0">Http</a>
+            </div>
+            <div id="namespace-1473175248" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Http.Client.html">Client</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-50435421"></a>
+                                <a href="../namespaces/Solvice.Job.html" style="margin-left: 30px; padding-left: 0">Job</a>
+            </div>
+            <div id="namespace-50435421" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Job.ClusterJob.html">ClusterJob</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Job.ConferenceJob.html">ConferenceJob</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Job.Job.html">Job</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Job.JobFactory.html">JobFactory</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1774900408"></a>
+                                <a href="../namespaces/Solvice.Solver.html" style="margin-left: 30px; padding-left: 0">Solver</a>
+            </div>
+            <div id="namespace-1774900408" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Solvice.Solver.ClusterSolver.html">ClusterSolver</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Solver.ConferenceSolver.html">ConferenceSolver</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Solver.Response.html">Response</a></li>
+                                                    <li class="class"><a href="../classes/Solvice.Solver.Solver.html">Solver</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/Solvice.Solver.html">\Solvice\Solver</a> <i class="icon-level-up"></i>
+                                            </nav>
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+
+                    <h1><small>\Solvice\Solver</small>ConferenceSolver</h1>
+                    <p><em>Class ConferenceSolver</em></p>
+                    
+                    
+                                        
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_toArray" class="">toArray()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.Solver.html#method_toJson" class="">toJson()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getClusters" class="">getClusters()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setClusters" class="">setClusters()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getOptions" class="">getOptions()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setOptions" class="">setOptions()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getPresenters" class="">getPresenters()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setPresenters" class="">setPresenters()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getRoomSlots" class="">getRoomSlots()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setRoomSlots" class="">setRoomSlots()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getRooms" class="">getRooms()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setRooms" class="">setRooms()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_getSlots" class="">getSlots()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_setSlots" class="">setSlots()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_addPresenter" class="">addPresenter()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_addSlot" class="">addSlot()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_addRoom" class="">addRoom()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_addRoomSlot" class="">addRoomSlot()</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#method_addCluster" class="">addCluster()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/Solvice.Solver.Solver.html#constant_CLUST" class="">CLUST</a><br />
+                                                                    <a href="../classes/Solvice.Solver.Solver.html#constant_CONF" class="">CONF</a><br />
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/Solvice.Solver.Solver.html#property_solver" class="">$solver</a><br />
+                                                                    <a href="../classes/Solvice.Solver.Solver.html#property_solveDuration" class="">$solveDuration</a><br />
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                        <section class="row-fluid private">
+                            <section class="span4">
+                                                                    <em>No private methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_roomSlots" class="">$roomSlots</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_presenters" class="">$presenters</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_slots" class="">$slots</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_rooms" class="">$rooms</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_clusters" class="">$clusters</a><br />
+                                                                    <a href="../classes/Solvice.Solver.ConferenceSolver.html#property_options" class="">$options</a><br />
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/Solver.ConferenceSolver.html"><div class="path-wrapper">Solver/ConferenceSolver.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Solvice\Solver</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                                                                                                                                                
+                                        <div class="namespace-wrapper"><a href="../classes/Solvice.Solver.Solver.html">\Solvice\Solver\Solver</a></div>
+                                                                                                    <div class="namespace-wrapper">\Solvice\Solver\ConferenceSolver</div>
+                            </dd>
+
+                        
+                        
+                        
+                        
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr><td colspan="2"><em>None found</em></td></tr>
+                                        </table>
+                </aside>
+            </div>
+
+                                    <a id="constants" name="constants"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Constants</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_CLUST" name="constant_CLUST" class="anchor"></a>
+            <article id="constant_CLUST" class="constant">
+                <h3 class="">CLUST</h3>
+                <pre class="signature">CLUST</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Solvice.Solver.Solver.html"><div class="path-wrapper">\Solvice\Solver\Solver</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_CONF" name="constant_CONF" class="anchor"></a>
+            <article id="constant_CONF" class="constant">
+                <h3 class="">CONF</h3>
+                <pre class="signature">CONF</pre>
+                <p><em></em></p>
+                
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Solvice.Solver.Solver.html"><div class="path-wrapper">\Solvice\Solver\Solver</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                                    <a id="properties" name="properties"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Properties</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_solver" name="property_solver" class="anchor"></a>
+            <article class="property">
+                <h3 class="protected ">$solver</h3>
+                <pre class="signature">$solver : </pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Solvice.Solver.Solver.html"><div class="path-wrapper">\Solvice\Solver\Solver</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_solveDuration" name="property_solveDuration" class="anchor"></a>
+            <article class="property">
+                <h3 class="protected ">$solveDuration</h3>
+                <pre class="signature">$solveDuration : integer</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                integer
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Solvice.Solver.Solver.html"><div class="path-wrapper">\Solvice\Solver\Solver</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_roomSlots" name="property_roomSlots" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$roomSlots</h3>
+                <pre class="signature">$roomSlots : \Solvice\Collection\RoomSlotCollection</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Collection.RoomSlotCollection.html">\Solvice\Collection\RoomSlotCollection</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_presenters" name="property_presenters" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$presenters</h3>
+                <pre class="signature">$presenters : \Solvice\Collection\PresenterCollection</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Collection.PresenterCollection.html">\Solvice\Collection\PresenterCollection</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_slots" name="property_slots" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$slots</h3>
+                <pre class="signature">$slots : \Solvice\Collection\SlotCollection</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Collection.SlotCollection.html">\Solvice\Collection\SlotCollection</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_rooms" name="property_rooms" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$rooms</h3>
+                <pre class="signature">$rooms : \Solvice\Collection\RoomCollection</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Collection.RoomCollection.html">\Solvice\Collection\RoomCollection</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_clusters" name="property_clusters" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$clusters</h3>
+                <pre class="signature">$clusters : \Solvice\Collection\ConferenceClusterCollection</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Collection.ConferenceClusterCollection.html">\Solvice\Collection\ConferenceClusterCollection</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_options" name="property_options" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$options</h3>
+                <pre class="signature">$options : \Solvice\Entity\ConferenceSolverOptions</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                <a href="../classes/Solvice.Entity.ConferenceSolverOptions.html">\Solvice\Entity\ConferenceSolverOptions</a>
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_toArray" name="method_toArray" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">toArray()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">toArray() : array</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_toJson" name="method_toJson" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">toJson()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">toJson() : mixed</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Solvice.Solver.Solver.html"><div class="path-wrapper">\Solvice\Solver\Solver</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method___construct" name="method___construct" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">__construct()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">__construct(\Solvice\Entity\ConferenceSolverOptions  <span class="argument">$options = null</span>, \Solvice\Collection\PresenterCollection  <span class="argument">$presenters = null</span>, \Solvice\Collection\ConferenceClusterCollection  <span class="argument">$clusters = null</span>, \Solvice\Collection\RoomCollection  <span class="argument">$rooms = null</span>, \Solvice\Collection\SlotCollection  <span class="argument">$slots = null</span>, \Solvice\Collection\RoomSlotCollection  <span class="argument">$roomSlots = null</span>) </pre>
+                <p><em>ConferenceSolver constructor.</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.ConferenceSolverOptions.html">\Solvice\Entity\ConferenceSolverOptions</a></td>
+                                <td>$options </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.PresenterCollection.html">\Solvice\Collection\PresenterCollection</a></td>
+                                <td>$presenters </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.ConferenceClusterCollection.html">\Solvice\Collection\ConferenceClusterCollection</a></td>
+                                <td>$clusters </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.RoomCollection.html">\Solvice\Collection\RoomCollection</a></td>
+                                <td>$rooms </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.SlotCollection.html">\Solvice\Collection\SlotCollection</a></td>
+                                <td>$slots </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.RoomSlotCollection.html">\Solvice\Collection\RoomSlotCollection</a></td>
+                                <td>$roomSlots </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getClusters" name="method_getClusters" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getClusters()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getClusters() : \Solvice\Collection\ConferenceClusterCollection</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Collection.ConferenceClusterCollection.html">\Solvice\Collection\ConferenceClusterCollection</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setClusters" name="method_setClusters" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setClusters()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setClusters(\Solvice\Collection\ConferenceClusterCollection  <span class="argument">$clusters</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.ConferenceClusterCollection.html">\Solvice\Collection\ConferenceClusterCollection</a></td>
+                                <td>$clusters </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getOptions" name="method_getOptions" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getOptions()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getOptions() : \Solvice\Entity\ConferenceSolverOptions</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Entity.ConferenceSolverOptions.html">\Solvice\Entity\ConferenceSolverOptions</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setOptions" name="method_setOptions" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setOptions()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setOptions(\Solvice\Entity\ConferenceSolverOptions  <span class="argument">$options</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.ConferenceSolverOptions.html">\Solvice\Entity\ConferenceSolverOptions</a></td>
+                                <td>$options </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPresenters" name="method_getPresenters" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getPresenters()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getPresenters() : \Solvice\Collection\PresenterCollection</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Collection.PresenterCollection.html">\Solvice\Collection\PresenterCollection</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setPresenters" name="method_setPresenters" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setPresenters()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setPresenters(\Solvice\Collection\PresenterCollection  <span class="argument">$presenters</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.PresenterCollection.html">\Solvice\Collection\PresenterCollection</a></td>
+                                <td>$presenters </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getRoomSlots" name="method_getRoomSlots" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getRoomSlots()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getRoomSlots() : \Solvice\Collection\RoomSlotCollection</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Collection.RoomSlotCollection.html">\Solvice\Collection\RoomSlotCollection</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setRoomSlots" name="method_setRoomSlots" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setRoomSlots()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setRoomSlots(\Solvice\Collection\RoomSlotCollection  <span class="argument">$roomSlots</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.RoomSlotCollection.html">\Solvice\Collection\RoomSlotCollection</a></td>
+                                <td>$roomSlots </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getRooms" name="method_getRooms" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getRooms()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getRooms() : \Solvice\Collection\RoomCollection</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Collection.RoomCollection.html">\Solvice\Collection\RoomCollection</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setRooms" name="method_setRooms" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setRooms()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setRooms(\Solvice\Collection\RoomCollection  <span class="argument">$rooms</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.RoomCollection.html">\Solvice\Collection\RoomCollection</a></td>
+                                <td>$rooms </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getSlots" name="method_getSlots" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">getSlots()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getSlots() : \Solvice\Collection\SlotCollection</pre>
+                <p><em></em></p>
+                
+
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Collection.SlotCollection.html">\Solvice\Collection\SlotCollection</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_setSlots" name="method_setSlots" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">setSlots()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">setSlots(\Solvice\Collection\SlotCollection  <span class="argument">$slots</span>) : \Solvice\Solver\ConferenceSolver</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Collection.SlotCollection.html">\Solvice\Collection\SlotCollection</a></td>
+                                <td>$slots </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    <a href="../classes/Solvice.Solver.ConferenceSolver.html">\Solvice\Solver\ConferenceSolver</a>
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addPresenter" name="method_addPresenter" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">addPresenter()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addPresenter(\Solvice\Entity\Presenter  <span class="argument">$presenter</span>) : $this</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.Presenter.html">\Solvice\Entity\Presenter</a></td>
+                                <td>$presenter </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addSlot" name="method_addSlot" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">addSlot()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addSlot(\Solvice\Entity\Slot  <span class="argument">$slot</span>) : $this</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.Slot.html">\Solvice\Entity\Slot</a></td>
+                                <td>$slot </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addRoom" name="method_addRoom" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">addRoom()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addRoom(\Solvice\Entity\Room  <span class="argument">$room</span>) : $this</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.Room.html">\Solvice\Entity\Room</a></td>
+                                <td>$room </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addRoomSlot" name="method_addRoomSlot" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">addRoomSlot()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addRoomSlot(\Solvice\Entity\RoomSlot  <span class="argument">$roomSlot</span>) : $this</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.RoomSlot.html">\Solvice\Entity\RoomSlot</a></td>
+                                <td>$roomSlot </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_addCluster" name="method_addCluster" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">addCluster()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">addCluster(\Solvice\Entity\ConferenceCluster  <span class="argument">$cluster</span>) : $this</pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td><a href="../classes/Solvice.Entity.ConferenceCluster.html">\Solvice\Entity\ConferenceCluster</a></td>
+                                <td>$cluster </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    $this
+                                    				
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                                    </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label">ConferenceSolver.php</h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/Solver/ConferenceSolver.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/Solvice.html">\Solvice</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on September 6th, 2016 at 13:09.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

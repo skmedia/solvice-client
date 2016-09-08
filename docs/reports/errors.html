@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; Compilation errors
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/Solvice.html">\Solvice</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">311</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">Navigation</li>
+                                                                            <li><a href="#Collection/AttributeCollection.php"><i class="icon-file"></i> Collection/AttributeCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/ClusterAssignmentsCollection.php"><i class="icon-file"></i> Collection/ClusterAssignmentsCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/ClusterCollection.php"><i class="icon-file"></i> Collection/ClusterCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/Collection.php"><i class="icon-file"></i> Collection/Collection.php</a></li>
+                                                                                                    <li><a href="#Collection/ConferenceAssignmentsCollection.php"><i class="icon-file"></i> Collection/ConferenceAssignmentsCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/ConferenceClusterCollection.php"><i class="icon-file"></i> Collection/ConferenceClusterCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/EntityCollection.php"><i class="icon-file"></i> Collection/EntityCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/KeywordCollection.php"><i class="icon-file"></i> Collection/KeywordCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/PresenterCollection.php"><i class="icon-file"></i> Collection/PresenterCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/RoomCollection.php"><i class="icon-file"></i> Collection/RoomCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/RoomSlotCollection.php"><i class="icon-file"></i> Collection/RoomSlotCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/SlotCollection.php"><i class="icon-file"></i> Collection/SlotCollection.php</a></li>
+                                                                                                    <li><a href="#Collection/UnresolvedItemCollection.php"><i class="icon-file"></i> Collection/UnresolvedItemCollection.php</a></li>
+                                                                                                    <li><a href="#Entity/Assignment/ClusterAssignment.php"><i class="icon-file"></i> Entity/Assignment/ClusterAssignment.php</a></li>
+                                                                                                    <li><a href="#Entity/Assignment/ConferenceClusterAssignment.php"><i class="icon-file"></i> Entity/Assignment/ConferenceClusterAssignment.php</a></li>
+                                                                                                    <li><a href="#Entity/Attribute.php"><i class="icon-file"></i> Entity/Attribute.php</a></li>
+                                                                                                    <li><a href="#Entity/Cluster.php"><i class="icon-file"></i> Entity/Cluster.php</a></li>
+                                                                                                    <li><a href="#Entity/ConferenceCluster.php"><i class="icon-file"></i> Entity/ConferenceCluster.php</a></li>
+                                                                                                    <li><a href="#Entity/ConferenceSolverOptions.php"><i class="icon-file"></i> Entity/ConferenceSolverOptions.php</a></li>
+                                                                                                    <li><a href="#Entity/Entity.php"><i class="icon-file"></i> Entity/Entity.php</a></li>
+                                                                                                    <li><a href="#Entity/Keyword.php"><i class="icon-file"></i> Entity/Keyword.php</a></li>
+                                                                                                    <li><a href="#Entity/Presenter.php"><i class="icon-file"></i> Entity/Presenter.php</a></li>
+                                                                                                    <li><a href="#Entity/Room.php"><i class="icon-file"></i> Entity/Room.php</a></li>
+                                                                                                    <li><a href="#Entity/RoomSlot.php"><i class="icon-file"></i> Entity/RoomSlot.php</a></li>
+                                                                                                    <li><a href="#Entity/Score.php"><i class="icon-file"></i> Entity/Score.php</a></li>
+                                                                                                    <li><a href="#Entity/Slot.php"><i class="icon-file"></i> Entity/Slot.php</a></li>
+                                                                                                    <li><a href="#Entity/UnresolvedItem.php"><i class="icon-file"></i> Entity/UnresolvedItem.php</a></li>
+                                                                                                    <li><a href="#Entity/UnresolvedItemLevel.php"><i class="icon-file"></i> Entity/UnresolvedItemLevel.php</a></li>
+                                                                                                    <li><a href="#Http/Client.php"><i class="icon-file"></i> Http/Client.php</a></li>
+                                                                                                    <li><a href="#Job/ClusterJob.php"><i class="icon-file"></i> Job/ClusterJob.php</a></li>
+                                                                                                    <li><a href="#Job/ConferenceJob.php"><i class="icon-file"></i> Job/ConferenceJob.php</a></li>
+                                                                                                    <li><a href="#Job/Job.php"><i class="icon-file"></i> Job/Job.php</a></li>
+                                                                                                    <li><a href="#Job/JobFactory.php"><i class="icon-file"></i> Job/JobFactory.php</a></li>
+                                                                                                    <li><a href="#Solver/ClusterSolver.php"><i class="icon-file"></i> Solver/ClusterSolver.php</a></li>
+                                                                                                    <li><a href="#Solver/ConferenceSolver.php"><i class="icon-file"></i> Solver/ConferenceSolver.php</a></li>
+                                                                                                    <li><a href="#Solver/Response.php"><i class="icon-file"></i> Solver/Response.php</a></li>
+                                                                                                    <li><a href="#Solver/Solver.php"><i class="icon-file"></i> Solver/Solver.php</a></li>
+                                                                    </ul>
+        </div>
+
+        <div class="span10 offset2">
+            <ul class="breadcrumb">
+                <li><a href="../"><i class="icon-remove-sign"></i></a><span class="divider">\</span></li>
+                <li>Compilation Errors</li>
+            </ul>
+
+            
+                            <div class="package-contents">
+                                            <a name="Collection/AttributeCollection.php" id="Collection/AttributeCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/AttributeCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/ClusterAssignmentsCollection.php" id="Collection/ClusterAssignmentsCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/ClusterAssignmentsCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/ClusterCollection.php" id="Collection/ClusterCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/ClusterCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/Collection.php" id="Collection/Collection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/Collection.php
+                            <small style="float: right;padding-right: 10px;">4</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for method joinBy()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/ConferenceAssignmentsCollection.php" id="Collection/ConferenceAssignmentsCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/ConferenceAssignmentsCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/ConferenceClusterCollection.php" id="Collection/ConferenceClusterCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/ConferenceClusterCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>31</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/EntityCollection.php" id="Collection/EntityCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/EntityCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/KeywordCollection.php" id="Collection/KeywordCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/KeywordCollection.php
+                            <small style="float: right;padding-right: 10px;">3</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/PresenterCollection.php" id="Collection/PresenterCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/PresenterCollection.php
+                            <small style="float: right;padding-right: 10px;">4</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>46</td>
+                                        <td>No summary for method toArrayWithKeys()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/RoomCollection.php" id="Collection/RoomCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/RoomCollection.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/RoomSlotCollection.php" id="Collection/RoomSlotCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/RoomSlotCollection.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/SlotCollection.php" id="Collection/SlotCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/SlotCollection.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Collection/UnresolvedItemCollection.php" id="Collection/UnresolvedItemCollection.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Collection/UnresolvedItemCollection.php
+                            <small style="float: right;padding-right: 10px;">4</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for method add()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method byLevel()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>47</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Assignment/ClusterAssignment.php" id="Entity/Assignment/ClusterAssignment.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Assignment/ClusterAssignment.php
+                            <small style="float: right;padding-right: 10px;">16</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>70</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>83</td>
+                                        <td>No summary for method getId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>93</td>
+                                        <td>No summary for method setId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>103</td>
+                                        <td>No summary for method getIndexInCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>113</td>
+                                        <td>No summary for method setIndexInCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>123</td>
+                                        <td>No summary for method getCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>133</td>
+                                        <td>No summary for method setCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>143</td>
+                                        <td>No summary for method getEntity()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>153</td>
+                                        <td>No summary for method setEntity()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>163</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $id</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $indexInCluster</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for property $cluster</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for property $entity</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Assignment/ConferenceClusterAssignment.php" id="Entity/Assignment/ConferenceClusterAssignment.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Assignment/ConferenceClusterAssignment.php
+                            <small style="float: right;padding-right: 10px;">20</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>67</td>
+                                        <td>No summary for method getIsLocked()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>No summary for method setIsLocked()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>No summary for method getIsReserved()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>97</td>
+                                        <td>No summary for method setIsReserved()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>107</td>
+                                        <td>No summary for method hasRoomSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>115</td>
+                                        <td>No summary for method getRoomSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>125</td>
+                                        <td>No summary for method setRoomSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>141</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>156</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>170</td>
+                                        <td>No summary for method getId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>180</td>
+                                        <td>No summary for method setId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>190</td>
+                                        <td>No summary for method getCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>200</td>
+                                        <td>No summary for method setCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>210</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for property $id</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $cluster</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for property $isLocked</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for property $isReserved</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>39</td>
+                                        <td>No summary for property $roomSlot</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Attribute.php" id="Entity/Attribute.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Attribute.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>5</td>
+                                        <td>No summary for class \Solvice\Entity\Attribute</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>35</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>45</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>55</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>10</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Cluster.php" id="Entity/Cluster.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Cluster.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>44</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>70</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>80</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>90</td>
+                                        <td>No summary for method getClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>100</td>
+                                        <td>No summary for method setClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>110</td>
+                                        <td>No summary for method getSize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>120</td>
+                                        <td>No summary for method setSize()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>130</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $clusterType</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $size</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/ConferenceCluster.php" id="Entity/ConferenceCluster.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/ConferenceCluster.php
+                            <small style="float: right;padding-right: 10px;">21</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>87</td>
+                                        <td>No summary for method getAttributes()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>97</td>
+                                        <td>No summary for method setAttributes()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>109</td>
+                                        <td>No summary for method addAttribute()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>119</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>129</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>139</td>
+                                        <td>No summary for method getClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>149</td>
+                                        <td>No summary for method setClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>159</td>
+                                        <td>No summary for method getPopulation()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>169</td>
+                                        <td>No summary for method setPopulation()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>179</td>
+                                        <td>No summary for method getPresenters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>189</td>
+                                        <td>No summary for method setPresenters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>201</td>
+                                        <td>No summary for method addPresenter()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>213</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>227</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $clusterType</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>No summary for property $population</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for property $presenters</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>38</td>
+                                        <td>No summary for property $attributes</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/ConferenceSolverOptions.php" id="Entity/ConferenceSolverOptions.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/ConferenceSolverOptions.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method getMaxChair()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>50</td>
+                                        <td>No summary for method setMaxChair()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $maxChair</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Entity.php" id="Entity/Entity.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Entity.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>36</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>46</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>72</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>80</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>88</td>
+                                        <td>No summary for method getClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>96</td>
+                                        <td>No summary for method setClusterType()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>104</td>
+                                        <td>No summary for method addKeyword()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>112</td>
+                                        <td>No summary for method getKeywords()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>120</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for property $clusterType</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for property $keywords</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Keyword.php" id="Entity/Keyword.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Keyword.php
+                            <small style="float: right;padding-right: 10px;">10</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>5</td>
+                                        <td>No summary for class \Solvice\Entity\Keyword</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>43</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>53</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>63</td>
+                                        <td>No summary for method getPriority()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>No summary for method setPriority()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>83</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>10</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $priority</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Presenter.php" id="Entity/Presenter.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Presenter.php
+                            <small style="float: right;padding-right: 10px;">7</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>50</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>68</td>
+                                        <td>No summary for method toArrayWithKeys()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Room.php" id="Entity/Room.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Room.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>36</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>58</td>
+                                        <td>No summary for method getCapacity()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>68</td>
+                                        <td>No summary for method setCapacity()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>78</td>
+                                        <td>No summary for method getAttributes()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>88</td>
+                                        <td>No summary for method setAttributes()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>98</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>116</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>128</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>17</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>22</td>
+                                        <td>No summary for property $capacity</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for property $attributes</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/RoomSlot.php" id="Entity/RoomSlot.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/RoomSlot.php
+                            <small style="float: right;padding-right: 10px;">16</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>39</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>61</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>69</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>77</td>
+                                        <td>No summary for method getRoom()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>85</td>
+                                        <td>No summary for method setRoom()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>93</td>
+                                        <td>No summary for method getSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>101</td>
+                                        <td>No summary for method setSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>109</td>
+                                        <td>No summary for method isLocked()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>117</td>
+                                        <td>No summary for method isReserved()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>127</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>139</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>151</td>
+                                        <td>No summary for method toFullArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $room</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for property $slot</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Score.php" id="Entity/Score.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Score.php
+                            <small style="float: right;padding-right: 10px;">17</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>40</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>50</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>79</td>
+                                        <td>No summary for method getHardScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>89</td>
+                                        <td>No summary for method setHardScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>99</td>
+                                        <td>No summary for method getSoftScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>109</td>
+                                        <td>No summary for method setSoftScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>119</td>
+                                        <td>No summary for method getMediumScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>129</td>
+                                        <td>No summary for method setMediumScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>139</td>
+                                        <td>No summary for method getFeasible()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>147</td>
+                                        <td>No summary for method isFeasible()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>157</td>
+                                        <td>No summary for method setFeasible()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>167</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $hardScore</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $softScore</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $mediumScore</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for property $feasible</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/Slot.php" id="Entity/Slot.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/Slot.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>56</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>66</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>76</td>
+                                        <td>No summary for method getIndex()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>86</td>
+                                        <td>No summary for method setIndex()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>96</td>
+                                        <td>No summary for method getDate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method setDate()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>118</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>130</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $index</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $date</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/UnresolvedItem.php" id="Entity/UnresolvedItem.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/UnresolvedItem.php
+                            <small style="float: right;padding-right: 10px;">13</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for method make()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>44</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>66</td>
+                                        <td>No summary for method getName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>76</td>
+                                        <td>No summary for method setName()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>86</td>
+                                        <td>No summary for method getValue()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>96</td>
+                                        <td>No summary for method setValue()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method getLevel()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>116</td>
+                                        <td>No summary for method setLevel()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>126</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $name</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $value</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $level</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Entity/UnresolvedItemLevel.php" id="Entity/UnresolvedItemLevel.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Entity/UnresolvedItemLevel.php
+                            <small style="float: right;padding-right: 10px;">1</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Http/Client.php" id="Http/Client.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Http/Client.php
+                            <small style="float: right;padding-right: 10px;">9</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>43</td>
+                                        <td>No summary for method solve()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>55</td>
+                                        <td>No summary for method jobs()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>65</td>
+                                        <td>No summary for method job()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>73</td>
+                                        <td>No summary for method queue()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>83</td>
+                                        <td>No summary for method jobIsSolved()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>99</td>
+                                        <td>No summary for method fetchJob()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>121</td>
+                                        <td>No summary for method request()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $client</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Job/ClusterJob.php" id="Job/ClusterJob.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Job/ClusterJob.php
+                            <small style="float: right;padding-right: 10px;">4</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method getAssignments()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>59</td>
+                                        <td>No summary for method setAssignments()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $assignments</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Job/ConferenceJob.php" id="Job/ConferenceJob.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Job/ConferenceJob.php
+                            <small style="float: right;padding-right: 10px;">6</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method getStatus()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>59</td>
+                                        <td>No summary for method setStatus()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>69</td>
+                                        <td>No summary for method getAssignments()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>79</td>
+                                        <td>No summary for method setAssignments()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $assignments</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Job/Job.php" id="Job/Job.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Job/Job.php
+                            <small style="float: right;padding-right: 10px;">12</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>39</td>
+                                        <td>No summary for method getId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method setId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>59</td>
+                                        <td>No summary for method getScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>69</td>
+                                        <td>No summary for method setScore()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>79</td>
+                                        <td>No summary for method getUnresolvedItems()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>89</td>
+                                        <td>No summary for method setUnresolvedItems()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>99</td>
+                                        <td>No summary for method getMessages()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>19</td>
+                                        <td>No summary for property $id</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for property $score</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>29</td>
+                                        <td>No summary for property $unresolvedItems</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>34</td>
+                                        <td>No summary for property $status</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Job/JobFactory.php" id="Job/JobFactory.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Job/JobFactory.php
+                            <small style="float: right;padding-right: 10px;">2</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>24</td>
+                                        <td>No summary for method buildJob()</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Solver/ClusterSolver.php" id="Solver/ClusterSolver.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Solver/ClusterSolver.php
+                            <small style="float: right;padding-right: 10px;">11</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>49</td>
+                                        <td>No summary for method fromArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>60</td>
+                                        <td>No summary for method getClusters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>68</td>
+                                        <td>No summary for method getEntities()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>76</td>
+                                        <td>No summary for method addCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>84</td>
+                                        <td>No summary for method addEntity()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>94</td>
+                                        <td>No summary for method setPresenters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method setClusters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>116</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $clusters</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>26</td>
+                                        <td>No summary for property $entities</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Solver/ConferenceSolver.php" id="Solver/ConferenceSolver.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Solver/ConferenceSolver.php
+                            <small style="float: right;padding-right: 10px;">25</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>86</td>
+                                        <td>No summary for method getClusters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>96</td>
+                                        <td>No summary for method setClusters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>No summary for method getOptions()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>116</td>
+                                        <td>No summary for method setOptions()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>126</td>
+                                        <td>No summary for method getPresenters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>136</td>
+                                        <td>No summary for method setPresenters()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>146</td>
+                                        <td>No summary for method getRoomSlots()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>156</td>
+                                        <td>No summary for method setRoomSlots()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>166</td>
+                                        <td>No summary for method getRooms()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>176</td>
+                                        <td>No summary for method setRooms()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>186</td>
+                                        <td>No summary for method getSlots()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>196</td>
+                                        <td>No summary for method setSlots()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>208</td>
+                                        <td>No summary for method addPresenter()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>220</td>
+                                        <td>No summary for method addSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>232</td>
+                                        <td>No summary for method addRoom()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>244</td>
+                                        <td>No summary for method addRoomSlot()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>256</td>
+                                        <td>No summary for method addCluster()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>266</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>No summary for property $roomSlots</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>32</td>
+                                        <td>No summary for property $presenters</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>37</td>
+                                        <td>No summary for property $slots</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>42</td>
+                                        <td>No summary for property $rooms</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>47</td>
+                                        <td>No summary for property $clusters</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>No summary for property $options</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Solver/Response.php" id="Solver/Response.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Solver/Response.php
+                            <small style="float: right;padding-right: 10px;">12</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>54</td>
+                                        <td>No summary for method fromJson()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>69</td>
+                                        <td>No summary for method getId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>79</td>
+                                        <td>No summary for method setId()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>89</td>
+                                        <td>No summary for method getStatus()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>99</td>
+                                        <td>No summary for method setStatus()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>109</td>
+                                        <td>No summary for method getUsername()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>119</td>
+                                        <td>No summary for method setUsername()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>15</td>
+                                        <td>No summary for property $id</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for property $status</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for property $username</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>30</td>
+                                        <td>No summary for property $solver</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="Solver/Solver.php" id="Solver/Solver.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            Solver/Solver.php
+                            <small style="float: right;padding-right: 10px;">5</small>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>No summary was found for this file</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>28</td>
+                                        <td>No summary for method toArray()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>33</td>
+                                        <td>No summary for method toJson()</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>18</td>
+                                        <td>No summary for property $solver</td>
+                                    </tr>
+                                                                    <tr>
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $solveDuration</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                    </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/Solvice.html">\Solvice</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on September 6th, 2016 at 13:09.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?php
+
+namespace Solvice\Entity;
+
+/**
+ * Class UnresolvedItemLevel
+ *
+ * @package Solvice\Entity
+ */
+class UnresolvedItemLevel
+{
+    const SOFT = 'SOFT';
+    const HARD = 'HARD';
+}

@@ -1,0 +1,106 @@
+{
+  "id": "57cd362dfad61bbed8927595",
+  "score": {
+    "hardScore": 0,
+    "mediumScore": -2,
+    "softScore": 0,
+    "feasible": true
+  },
+  "unresolved": [
+    {
+      "name": "Unassigned Cluster",
+      "value": -2,
+      "level": "SOFT"
+    },
+    {
+      "name": "As Early As Possible",
+      "value": 0,
+      "level": "SOFT"
+    }
+  ],
+  "status": "SOLVED",
+  "username": "username",
+  "solver": "CONF",
+  "options": {
+    "cluster_size": 0,
+    "max_chair": 0
+  },
+  "solve_duration": 10,
+  "solve_started": "2016-09-05T09:09:01.648",
+  "presenters": [
+    {
+      "name": "P1"
+    }
+  ],
+  "clusters": [
+    {
+      "name": "Session Cluster 1",
+      "population": 10,
+      "presenters": [
+        {
+          "name": "P1"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "single_paper"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "room_1",
+      "capacity": 10,
+      "attributes": [
+        "Flipboard"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "9h-10h_2018-09-01",
+      "index": 0,
+      "date": "2018-09-01"
+    }
+  ],
+  "room_slots": [
+    {
+      "name": "room_19h-10h_2018-09-01",
+      "room": {
+        "name": "room_1",
+        "capacity": 10,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "9h-10h_2018-09-01",
+        "index": 0,
+        "date": "2018-09-01"
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "id": 0,
+      "cluster": {
+        "name": "Session Cluster 1",
+        "population": 10,
+        "presenters": [
+          {
+            "name": "P1"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "single_paper"
+      },
+      "chair": {
+        "name": "P1"
+      },
+      "is_locked": false,
+      "is_reserved": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Solvice\\": "src/Solvice",
+      "SolviceTest\\": "tests/Solvice"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "doctrine/collections": "^1.3",
+    "doctrine/inflector": "^1.1"
+  },
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "^2.9",
+    "phpunit/phpunit": "^5.5"
+  }
+}

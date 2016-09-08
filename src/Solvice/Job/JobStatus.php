@@ -1,0 +1,15 @@
+<?php
+
+namespace Solvice\Job;
+
+/**
+ * Class JobStatus
+ *
+ * @package Solvice\Job
+ */
+class JobStatus
+{
+    const SOLVED = 'SOLVED';
+    const SOLVING = 'SOLVING';
+    const ERROR = 'ERROR';
+}

@@ -1,0 +1,281 @@
+<?php
+
+namespace Solvice\Solver;
+
+use Solvice\Collection\ConferenceClusterCollection;
+use Solvice\Collection\PresenterCollection;
+use Solvice\Collection\RoomCollection;
+use Solvice\Collection\RoomSlotCollection;
+use Solvice\Collection\SlotCollection;
+use Solvice\Entity\ConferenceCluster;
+use Solvice\Entity\ConferenceSolverOptions;
+use Solvice\Entity\Presenter;
+use Solvice\Entity\Room;
+use Solvice\Entity\RoomSlot;
+use Solvice\Entity\Slot;
+
+/**
+ * Class ConferenceSolver
+ *
+ * @package Solvice\Solver
+ */
+class ConferenceSolver extends Solver
+{
+    /**
+     * @var RoomSlotCollection
+     */
+    private $roomSlots;
+
+    /**
+     * @var PresenterCollection
+     */
+    private $presenters;
+
+    /**
+     * @var SlotCollection
+     */
+    private $slots;
+
+    /**
+     * @var RoomCollection
+     */
+    private $rooms;
+
+    /**
+     * @var ConferenceClusterCollection
+     */
+    private $clusters;
+
+    /**
+     * @var ConferenceSolverOptions
+     */
+    private $options;
+
+    /**
+     * ConferenceSolver constructor.
+     *
+     * @param ConferenceSolverOptions     $options
+     * @param PresenterCollection         $presenters
+     * @param ConferenceClusterCollection $clusters
+     * @param RoomCollection              $rooms
+     * @param SlotCollection              $slots
+     * @param RoomSlotCollection          $roomSlots
+     */
+    public function __construct(
+        ConferenceSolverOptions $options = null,
+        PresenterCollection $presenters = null,
+        ConferenceClusterCollection $clusters = null,
+        RoomCollection $rooms = null,
+        SlotCollection $slots = null,
+        RoomSlotCollection $roomSlots = null
+    ) {
+        $this->solver = Solver::CONF;
+
+        $this->options = $options ?: ConferenceSolverOptions::make(2);
+
+        $this->presenters = $presenters ?: new PresenterCollection();
+        $this->clusters = $clusters ?: new ConferenceClusterCollection();
+        $this->rooms = $rooms ?: new RoomCollection();
+        $this->slots = $slots ?: new SlotCollection();
+        $this->roomSlots = $roomSlots ?: new RoomSlotCollection();
+    }
+
+    /**
+     * @return ConferenceClusterCollection
+     */
+    public function getClusters()
+    {
+        return $this->clusters;
+    }
+
+    /**
+     * @param ConferenceClusterCollection $clusters
+     *
+     * @return ConferenceSolver
+     */
+    public function setClusters($clusters)
+    {
+        $this->clusters = $clusters;
+
+        return $this;
+    }
+
+    /**
+     * @return ConferenceSolverOptions
+     */
+    public function getOptions()
+    {
+        return $this->options;
+    }
+
+    /**
+     * @param ConferenceSolverOptions $options
+     *
+     * @return ConferenceSolver
+     */
+    public function setOptions(ConferenceSolverOptions $options)
+    {
+        $this->options = $options;
+
+        return $this;
+    }
+
+    /**
+     * @return PresenterCollection
+     */
+    public function getPresenters()
+    {
+        return $this->presenters;
+    }
+
+    /**
+     * @param PresenterCollection $presenters
+     *
+     * @return ConferenceSolver
+     */
+    public function setPresenters(PresenterCollection $presenters)
+    {
+        $this->presenters = $presenters;
+
+        return $this;
+    }
+
+    /**
+     * @return RoomSlotCollection
+     */
+    public function getRoomSlots()
+    {
+        return $this->roomSlots;
+    }
+
+    /**
+     * @param RoomSlotCollection $roomSlots
+     *
+     * @return ConferenceSolver
+     */
+    public function setRoomSlots(RoomSlotCollection $roomSlots)
+    {
+        $this->roomSlots = $roomSlots;
+
+        return $this;
+    }
+
+    /**
+     * @return RoomCollection
+     */
+    public function getRooms()
+    {
+        return $this->rooms;
+    }
+
+    /**
+     * @param RoomCollection $rooms
+     *
+     * @return ConferenceSolver
+     */
+    public function setRooms(RoomCollection $rooms)
+    {
+        $this->rooms = $rooms;
+
+        return $this;
+    }
+
+    /**
+     * @return SlotCollection
+     */
+    public function getSlots()
+    {
+        return $this->slots;
+    }
+
+    /**
+     * @param SlotCollection $slots
+     *
+     * @return ConferenceSolver
+     */
+    public function setSlots(SlotCollection $slots)
+    {
+        $this->slots = $slots;
+
+        return $this;
+    }
+
+    /**
+     * @param Presenter $presenter
+     *
+     * @return $this
+     */
+    public function addPresenter(Presenter $presenter)
+    {
+        $this->presenters->add($presenter);
+
+        return $this;
+    }
+
+    /**
+     * @param Slot $slot
+     *
+     * @return $this
+     */
+    public function addSlot(Slot $slot)
+    {
+        $this->slots->add($slot);
+
+        return $this;
+    }
+
+    /**
+     * @param Room $room
+     *
+     * @return $this
+     */
+    public function addRoom(Room $room)
+    {
+        $this->rooms->add($room);
+
+        return $this;
+    }
+
+    /**
+     * @param RoomSlot $roomSlot
+     *
+     * @return $this
+     */
+    public function addRoomSlot(RoomSlot $roomSlot)
+    {
+        $this->roomSlots->add($roomSlot);
+
+        return $this;
+    }
+
+    /**
+     * @param ConferenceCluster $cluster
+     *
+     * @return $this
+     */
+    public function addCluster(ConferenceCluster $cluster)
+    {
+        $this->clusters->add($cluster);
+
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        $data = [];
+
+        $data['solver'] = $this->solver;
+        $data['solve_duration'] = $this->solveDuration;
+        $data['options'] = $this->options->toArray();
+        $data['clusters'] = $this->clusters->toArray();
+        $data['rooms'] = $this->rooms->toArray();
+        $data['slots'] = $this->slots->toArray();
+        $data['presenters'] = $this->presenters->toArrayWithKeys();
+        $data['room_slots'] = $this->roomSlots->toArray();
+
+        return $data;
+    }
+}
