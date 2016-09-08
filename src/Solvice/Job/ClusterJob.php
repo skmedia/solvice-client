@@ -16,11 +16,6 @@ use Solvice\Entity\Score;
 class ClusterJob extends Job
 {
     /**
-     * @var ClusterAssignmentsCollection
-     */
-    protected $assignments;
-
-    /**
      * ClusterJob constructor.
      *
      * @param                                   $id
@@ -41,26 +36,6 @@ class ClusterJob extends Job
         $this->score = $score;
         $this->unresolvedItems = $unresolvedItems;
         $this->assignments = $assignments;
-    }
-
-    /**
-     * @return ClusterAssignmentsCollection
-     */
-    public function getAssignments()
-    {
-        return $this->assignments;
-    }
-
-    /**
-     * @param ClusterAssignmentsCollection $assignments
-     *
-     * @return ClusterJob
-     */
-    public function setAssignments(ClusterAssignmentsCollection $assignments)
-    {
-        $this->assignments = $assignments;
-
-        return $this;
     }
 
     /**

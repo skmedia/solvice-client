@@ -16,11 +16,6 @@ use Solvice\Entity\Score;
 class ConferenceJob extends Job
 {
     /**
-     * @var ConferenceAssignmentsCollection
-     */
-    protected $assignments;
-
-    /**
      * ClusterJob constructor.
      *
      * @param                                   $id
@@ -41,45 +36,5 @@ class ConferenceJob extends Job
         $this->score = $score;
         $this->unresolvedItems = $unresolvedItems;
         $this->assignments = $assignments;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * @param mixed $status
-     *
-     * @return ClusterJob
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-
-        return $this;
-    }
-
-    /**
-     * @return ConferenceAssignmentsCollection
-     */
-    public function getAssignments()
-    {
-        return $this->assignments;
-    }
-
-    /**
-     * @param ConferenceAssignmentsCollection $assignments
-     *
-     * @return ClusterJob
-     */
-    public function setAssignments(ConferenceAssignmentsCollection $assignments)
-    {
-        $this->assignments = $assignments;
-
-        return $this;
     }
 }

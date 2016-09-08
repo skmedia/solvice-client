@@ -64,4 +64,18 @@ trait Builder
 
         return SolviceEntity\Entity::make($name, $type, $keywordCollection);
     }
+
+    /**
+     * @param $name
+     * @param $capacity
+     * @param $attributes
+     *
+     * @return static
+     */
+    protected function createRoom($name, $capacity, $attributes)
+    {
+        $attributeCollection = AttributeCollection::fromArray($attributes);
+
+        return SolviceEntity\Room::make($name, $capacity, $attributeCollection);
+    }
 }

@@ -130,6 +130,41 @@ class ClusterSolver extends Solver
         $this->verifyClusterCount();
     }
 
+    /**
+     * @return mixed
+     */
+    public function getSolver()
+    {
+        return $this->solver;
+    }
+
+    /**
+     * @param mixed $solver
+     */
+    public function setSolver($solver)
+    {
+        $this->solver = $solver;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSolveDuration()
+    {
+        return $this->solveDuration;
+    }
+
+    /**
+     * @param int $solveDuration
+     */
+    public function setSolveDuration($solveDuration)
+    {
+        $this->solveDuration = $solveDuration;
+    }
+
+    /**
+     * @throws InvalidSolverException
+     */
     private function verifyClusterCount()
     {
         $entityCount = $this->entities->count();

@@ -9,7 +9,7 @@ use Solvice\Entity\Assignment\ConferenceClusterAssignment;
  *
  * @package Solvice
  */
-class ConferenceAssignmentsCollection extends Collection
+class ConferenceAssignmentsCollection extends AssignmentsCollection
 {
     /**
      * @param ConferenceClusterAssignment $assignment

@@ -2,6 +2,7 @@
 
 namespace Solvice\Job;
 
+use Solvice\Collection\AssignmentsCollection;
 use Solvice\Collection\UnresolvedItemCollection;
 use Solvice\Entity\Score;
 use Solvice\Entity\UnresolvedItem;
@@ -32,6 +33,11 @@ abstract class Job
      * @var
      */
     protected $status;
+
+    /**
+     * @var AssignmentsCollection
+     */
+    protected $assignments;
 
     /**
      * @return mixed
@@ -74,6 +80,26 @@ abstract class Job
     }
 
     /**
+     * @return mixed
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param mixed $status
+     *
+     * @return ClusterJob
+     */
+    public function setStatus($status)
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    /**
      * @return UnresolvedItemCollection
      */
     public function getUnresolvedItems()
@@ -101,6 +127,26 @@ abstract class Job
         return $this->unresolvedItems->map(function($item) {
             return $item->getName();
         });
+    }
+
+    /**
+     * @return AssignmentsCollection
+     */
+    public function getAssignments()
+    {
+        return $this->assignments;
+    }
+
+    /**
+     * @param AssignmentsCollection $assignments
+     *
+     * @return ClusterJob
+     */
+    public function setAssignments(AssignmentsCollection $assignments)
+    {
+        $this->assignments = $assignments;
+
+        return $this;
     }
 
     /**

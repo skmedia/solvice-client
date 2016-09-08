@@ -260,6 +260,10 @@ class ConferenceSolver extends Solver
         return $this;
     }
 
+    public function verify()
+    {
+    }
+
     /**
      * @return array
      */

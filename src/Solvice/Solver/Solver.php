@@ -2,6 +2,8 @@
 
 namespace Solvice\Solver;
 
+use Solvice\Exception\InvalidSolverException;
+
 /**
  * Class Solver
  *
@@ -23,9 +25,16 @@ abstract class Solver
     protected $solveDuration = 0;
 
     /**
-     * @return mixed
+     * @return array
      */
     abstract public function toArray();
+
+    /**
+     * @throws InvalidSolverException
+     *
+     * @return void
+     */
+    abstract public function verify();
 
     /**
      * @return mixed

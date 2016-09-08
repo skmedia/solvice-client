@@ -9,7 +9,7 @@ use Solvice\Entity\Assignment\ClusterAssignment;
  *
  * @package Solvice
  */
-class ClusterAssignmentsCollection extends Collection
+class ClusterAssignmentsCollection extends AssignmentsCollection
 {
     /**
      * @param Assignment $assignment
