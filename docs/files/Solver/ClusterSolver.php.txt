@@ -7,6 +7,7 @@ use Solvice\Collection\ClusterCollection;
 use Solvice\Collection\EntityCollection;
 use Solvice\Entity\Cluster;
 use Solvice\Entity\Entity;
+use Solvice\Exception\InvalidSolverException;
 
 /**
  * Class ClusterSolver
@@ -121,5 +122,61 @@ class ClusterSolver extends Solver
             'clusters' => $this->clusters->toArray(),
             'entities' => $this->entities->toArray(),
         ];
+    }
+
+    public function verify()
+    {
+        $this->verifyClusterTypes();
+        $this->verifyClusterCount();
+    }
+
+    private function verifyClusterCount()
+    {
+        $entityCount = $this->entities->count();
+
+        $clusterSizeCount = array_sum(
+            $this->clusters
+                ->map(function (Cluster $cluster) {
+                    return $cluster->getSize();
+                })->getValues()
+            );
+
+        if ($entityCount !== $clusterSizeCount) {
+            $msg = sprintf('Invalid cluster count, entities: %s, cluster size sum: %s', $entityCount, $clusterSizeCount);
+            throw new InvalidSolverException($msg);
+        }
+    }
+
+    private function verifyClusterTypes()
+    {
+        $uniqueEntityClusterTypes = array_unique(
+            $this->entities
+                ->map(function (Entity $entity) {
+                    return $entity->getClusterType();
+                })
+                ->getValues()
+        );
+
+        $uniqueClusterClusterTypes = array_unique(
+            $this->clusters
+                ->map(function (Cluster $cluster) {
+                    return $cluster->getClusterType();
+                })
+                ->getValues()
+        );
+
+        $r = array_diff($uniqueEntityClusterTypes, $uniqueClusterClusterTypes);
+        if ($r) {
+            throw new InvalidSolverException(
+                'The following cluster types are defined in the entities but not in the clusters: ' . implode(', ', $r)
+            );
+        }
+
+        $r = array_diff($uniqueClusterClusterTypes, $uniqueEntityClusterTypes);
+        if ($r) {
+            throw new InvalidSolverException(
+                'The following cluster types are defined in the clusters but not in the entities: ' . implode(', ', $r)
+            );
+        }
     }
 }

@@ -41,6 +41,21 @@ class PresenterCollection extends Collection
     }
 
     /**
+     * @param $items
+     *
+     * @return static
+     */
+    public static function fromArrayValues($items)
+    {
+        $collection = new static;
+        foreach ($items as $item) {
+            $collection->add(Presenter::make($item));
+        }
+
+        return $collection;
+    }
+
+    /**
      * @return array
      */
     public function toArrayWithKeys()

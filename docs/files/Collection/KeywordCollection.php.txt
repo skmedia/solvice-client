@@ -39,4 +39,19 @@ class KeywordCollection extends Collection
 
         return $collection;
     }
+
+    /**
+     * @param $items
+     *
+     * @return static
+     */
+    public static function fromValues($items)
+    {
+        $collection = new static;
+        foreach ($items as $item) {
+            $collection->add(Keyword::make($item));
+        }
+
+        return $collection;
+    }
 }

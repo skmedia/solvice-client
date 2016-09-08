@@ -3,6 +3,10 @@
 namespace Solvice\Http;
 
 use \GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\GuzzleException;
+use Solvice\Exception\SolviceRequestException;
+use Solvice\Job\Job;
 use Solvice\Job\JobFactory;
 use Solvice\Solver\Response;
 use Solvice\Solver\Solver;
@@ -20,19 +24,25 @@ class Client
     private $client;
 
     /**
+     * @var JobFactory
+     */
+    private $jobFactory;
+
+    /**
      * Client constructor.
      *
-     * @param $apiEndpoint
-     * @param $username
-     * @param $password
+     * @param Config     $config
+     * @param JobFactory $jobFactory
      */
-    public function __construct($apiEndpoint, $username, $password)
+    public function __construct(Config $config, JobFactory $jobFactory)
     {
         $this->client = new GuzzleClient([
-            'base_uri' => $apiEndpoint,
+            'base_uri' => $config->getApiEndpoint(),
             'headers' => ['Content-Type' => 'application/json'],
-            'auth' => [$username, $password],
+            'auth' => $config->getAuth(),
         ]);
+
+        $this->jobFactory = $jobFactory;
     }
 
     /**
@@ -78,23 +88,7 @@ class Client
     /**
      * @param $id
      *
-     * @return bool
-     */
-    public function jobIsSolved($id)
-    {
-        $job = $this->fetchJob($id);
-
-        if ($job['status'] === 'SOLVED') {
-            return true;
-        }
-
-        return false;
-    }
-
-    /**
-     * @param $id
-     *
-     * @return mixed
+     * @return Job
      */
     public function fetchJob($id)
     {
@@ -106,7 +100,10 @@ class Client
             // throw new InvalidSolviceJobException();
         }
 
-        return JobFactory::buildJob($jobData['solver'], $jobData);
+        return $this->jobFactory->buildJob(
+            $jobData['solver'],
+            $jobData
+        );
 
         return $jobData;
     }
@@ -117,16 +114,18 @@ class Client
      * @param array $options
      *
      * @return string
+     * @throws SolviceRequestException
      */
     private function request($method, $path, $options = [])
     {
         try {
             $response = $this->client->request($method, $path, $options);
-
             return $response->getBody()->getContents();
-        } catch (\Exception $e) {
-            echo $e->getMessage();
-            // throw new SolviceRequestException();
+        } catch (ClientException $e) {
+            throw  (new SolviceRequestException())
+                ->setError($e->getResponse()->getBody());
+        } catch (GuzzleException $e) {
+            throw new SolviceRequestException($e->getMessage());
         }
     }
 }

@@ -21,7 +21,7 @@ class JobFactory
      *
      * @return ClusterJob
      */
-    public static function buildJob($type, $job)
+    public function buildJob($type, $job)
     {
         if ($type === Solver::CLUST) {
             return new ClusterJob(

@@ -102,4 +102,28 @@ abstract class Job
             return $item->getName();
         });
     }
+
+    /**
+     * @return bool
+     */
+    public function isSolved()
+    {
+        return $this->status === JobStatus::SOLVED;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isSolving()
+    {
+        return $this->status === JobStatus::SOLVING;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasError()
+    {
+        return $this->status === JobStatus::ERROR;
+    }
 }
