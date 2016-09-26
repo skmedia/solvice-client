@@ -21,22 +21,27 @@ class JobFactory
      */
     public function buildJob($type, $job)
     {
+        $id = $job['id'];
+        $status = $job['status'];
+        $score = isset($job['score']) ? $job['score'] : null;
+        $unresolvedItemCollection = UnresolvedItemCollection::fromArray($job['unresolved']);
+
         if ($type === Solver::CLUST) {
             return new ClusterJob(
-                $job['id'],
-                $job['status'],
-                Score::fromArray($job['score']),
-                UnresolvedItemCollection::fromArray($job['unresolved']),
+                $id,
+                $status,
+                $score,
+                $unresolvedItemCollection,
                 ClusterAssignmentsCollection::fromArray($job['assignments'])
             );
         }
 
         if ($type === Solver::CONF) {
             return new ConferenceJob(
-                $job['id'],
-                $job['status'],
-                Score::fromArray($job['score']),
-                UnresolvedItemCollection::fromArray($job['unresolved']),
+                $id,
+                $status,
+                $score,
+                $unresolvedItemCollection,
                 ConferenceAssignmentsCollection::fromArray($job['assignments'])
             );
         }

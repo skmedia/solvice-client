@@ -25,7 +25,7 @@ class ClusterJob extends Job
     public function __construct(
         $id,
         $status,
-        Score $score,
+        Score $score = null,
         UnresolvedItemCollection $unresolvedItems,
         ClusterAssignmentsCollection $assignments = null
     ) {
