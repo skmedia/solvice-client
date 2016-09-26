@@ -33,12 +33,18 @@ class JobFactory
             : new UnresolvedItemCollection;
 
         if ($type === Solver::CLUST) {
-            $assignments = ClusterAssignmentsCollection::fromArray($job['assignments']);
+            $assignments = isset($job['unresolved'])
+                ? ClusterAssignmentsCollection::fromArray($job['assignments'])
+                : new ClusterAssignmentsCollection;
+
             return new ClusterJob($id, $status, $score, $unresolvedItemCollection, $assignments);
         }
 
         if ($type === Solver::CONF) {
-            $assignments = ConferenceAssignmentsCollection::fromArray($job['assignments']);
+            $assignments = isset($job['unresolved'])
+                ? ConferenceAssignmentsCollection::fromArray($job['assignments'])
+                : new ClusterAssignmentsCollection;
+
             return new ConferenceJob($id, $status, $score, $unresolvedItemCollection, $assignments);
         }
     }
