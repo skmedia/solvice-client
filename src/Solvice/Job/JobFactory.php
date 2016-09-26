@@ -23,27 +23,23 @@ class JobFactory
     {
         $id = $job['id'];
         $status = $job['status'];
-        $score = isset($job['score']) ? Score::fromArray($job['score']) : null;
-        $unresolvedItemCollection = UnresolvedItemCollection::fromArray($job['unresolved']);
+
+        $score = isset($job['score'])
+            ? Score::fromArray($job['score'])
+            : null;
+
+        $unresolvedItemCollection = isset($job['unresolved'])
+            ? UnresolvedItemCollection::fromArray($job['unresolved'])
+            : new UnresolvedItemCollection;
 
         if ($type === Solver::CLUST) {
-            return new ClusterJob(
-                $id,
-                $status,
-                $score,
-                $unresolvedItemCollection,
-                ClusterAssignmentsCollection::fromArray($job['assignments'])
-            );
+            $assignments = ClusterAssignmentsCollection::fromArray($job['assignments']);
+            return new ClusterJob($id, $status, $score, $unresolvedItemCollection, $assignments);
         }
 
         if ($type === Solver::CONF) {
-            return new ConferenceJob(
-                $id,
-                $status,
-                $score,
-                $unresolvedItemCollection,
-                ConferenceAssignmentsCollection::fromArray($job['assignments'])
-            );
+            $assignments = ConferenceAssignmentsCollection::fromArray($job['assignments']);
+            return new ConferenceJob($id, $status, $score, $unresolvedItemCollection, $assignments);
         }
     }
 }
