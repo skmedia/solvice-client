@@ -46,7 +46,7 @@ class Client
     /**
      * @param Solver $solver
      *
-     * @return string
+     * @return Response
      */
     public function solve(Solver $solver)
     {
