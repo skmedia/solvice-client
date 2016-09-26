@@ -23,7 +23,7 @@ class JobFactory
     {
         $id = $job['id'];
         $status = $job['status'];
-        $score = isset($job['score']) ? $job['score'] : null;
+        $score = isset($job['score']) ? Score::fromArray($job['score']) : null;
         $unresolvedItemCollection = UnresolvedItemCollection::fromArray($job['unresolved']);
 
         if ($type === Solver::CLUST) {
