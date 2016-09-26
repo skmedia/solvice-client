@@ -9,9 +9,7 @@ use Solvice\Entity\Score;
 use Solvice\Solver\Solver;
 
 /**
- * Class JobFactory
- *
- * @package Solvice\Job
+ * Class JobFactory.
  */
 class JobFactory
 {

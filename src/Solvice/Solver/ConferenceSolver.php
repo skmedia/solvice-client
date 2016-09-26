@@ -2,6 +2,7 @@
 
 namespace Solvice\Solver;
 
+use Solvice\Collection\ConferenceAssignmentsCollection;
 use Solvice\Collection\ConferenceClusterCollection;
 use Solvice\Collection\PresenterCollection;
 use Solvice\Collection\RoomCollection;
@@ -15,9 +16,7 @@ use Solvice\Entity\RoomSlot;
 use Solvice\Entity\Slot;
 
 /**
- * Class ConferenceSolver
- *
- * @package Solvice\Solver
+ * Class ConferenceSolver.
  */
 class ConferenceSolver extends Solver
 {
@@ -52,14 +51,20 @@ class ConferenceSolver extends Solver
     private $options;
 
     /**
+     * @var ConferenceAssignmentsCollection
+     */
+    private $assignments;
+
+    /**
      * ConferenceSolver constructor.
      *
-     * @param ConferenceSolverOptions     $options
-     * @param PresenterCollection         $presenters
-     * @param ConferenceClusterCollection $clusters
-     * @param RoomCollection              $rooms
-     * @param SlotCollection              $slots
-     * @param RoomSlotCollection          $roomSlots
+     * @param ConferenceSolverOptions         $options
+     * @param PresenterCollection             $presenters
+     * @param ConferenceClusterCollection     $clusters
+     * @param RoomCollection                  $rooms
+     * @param SlotCollection                  $slots
+     * @param RoomSlotCollection              $roomSlots
+     * @param ConferenceAssignmentsCollection $assignments
      */
     public function __construct(
         ConferenceSolverOptions $options = null,
@@ -67,7 +72,8 @@ class ConferenceSolver extends Solver
         ConferenceClusterCollection $clusters = null,
         RoomCollection $rooms = null,
         SlotCollection $slots = null,
-        RoomSlotCollection $roomSlots = null
+        RoomSlotCollection $roomSlots = null,
+        ConferenceAssignmentsCollection $assignments = null
     ) {
         $this->solver = Solver::CONF;
 
@@ -78,6 +84,7 @@ class ConferenceSolver extends Solver
         $this->rooms = $rooms ?: new RoomCollection();
         $this->slots = $slots ?: new SlotCollection();
         $this->roomSlots = $roomSlots ?: new RoomSlotCollection();
+        $this->assignments = $assignments ?: new ConferenceAssignmentsCollection();
     }
 
     /**
@@ -96,6 +103,26 @@ class ConferenceSolver extends Solver
     public function setClusters($clusters)
     {
         $this->clusters = $clusters;
+
+        return $this;
+    }
+
+    /**
+     * @return ConferenceAssignmentsCollection
+     */
+    public function getAssignments()
+    {
+        return $this->clusters;
+    }
+
+    /**
+     * @param ConferenceAssignmentsCollection $assignments
+     *
+     * @return ConferenceSolver
+     */
+    public function setAssignments($assignments)
+    {
+        $this->assignments = $assignments;
 
         return $this;
     }
@@ -279,6 +306,7 @@ class ConferenceSolver extends Solver
         $data['slots'] = $this->slots->toArray();
         $data['presenters'] = $this->presenters->toArrayWithKeys();
         $data['room_slots'] = $this->roomSlots->toArray();
+        $data['assignments'] = $this->assignments->toArray();
 
         return $data;
     }

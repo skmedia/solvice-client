@@ -15,8 +15,8 @@ class Keyword
     private $priority = 0;
 
     /**
-     * @param                   $name
-     * @param                   $priority
+     * @param   $name
+     * @param   $priority
      *
      * @return static
      */
@@ -28,8 +28,8 @@ class Keyword
     /**
      * Entity constructor.
      *
-     * @param                   $name
-     * @param                   $priority
+     * @param   $name
+     * @param   $priority
      */
     public function __construct($name, $priority = 0)
     {

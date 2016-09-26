@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Slot;
 
 /**
- * Class SlotCollection
- *
- * @package Solvice
+ * Class SlotCollection.
  */
 class SlotCollection extends Collection
 {
@@ -19,7 +17,7 @@ class SlotCollection extends Collection
     public function add($item)
     {
         if (!($item instanceof Slot)) {
-            throw new \InvalidArgumentException('Not a slot: ' . get_class($item));
+            throw new \InvalidArgumentException('Not a slot: '.get_class($item));
         }
 
         return parent::add($item);

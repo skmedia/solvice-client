@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Assignment\ConferenceClusterAssignment;
 
 /**
- * Class ConferenceAssignmentsCollection
- *
- * @package Solvice
+ * Class ConferenceAssignmentsCollection.
  */
 class ConferenceAssignmentsCollection extends AssignmentsCollection
 {
@@ -32,7 +30,7 @@ class ConferenceAssignmentsCollection extends AssignmentsCollection
      */
     public static function fromArray($assignments)
     {
-        $collection = new static;
+        $collection = new static();
 
         foreach ($assignments as $assignment) {
             $collection->add(ConferenceClusterAssignment::fromArray($assignment));
@@ -40,5 +38,4 @@ class ConferenceAssignmentsCollection extends AssignmentsCollection
 
         return $collection;
     }
-
 }

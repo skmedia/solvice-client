@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class Cluster
- *
- * @package Solvice\Entity
+ * Class Cluster.
  */
 class Cluster
 {

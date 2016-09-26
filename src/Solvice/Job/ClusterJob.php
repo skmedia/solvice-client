@@ -9,9 +9,7 @@ use Solvice\Entity\Assignment\ClusterAssignment;
 use Solvice\Entity\Score;
 
 /**
- * Class ClusterJob
- *
- * @package Solvice\Job
+ * Class ClusterJob.
  */
 class ClusterJob extends Job
 {
@@ -39,7 +37,7 @@ class ClusterJob extends Job
     }
 
     /**
-     * Return all clusters with their assigned entities
+     * Return all clusters with their assigned entities.
      */
     public function assignmentOverview()
     {

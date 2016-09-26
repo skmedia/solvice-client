@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class ConferenceSolverOptions
- *
- * @package Solvice\Collection
+ * Class ConferenceSolverOptions.
  */
 class ConferenceSolverOptions
 {
@@ -53,7 +51,6 @@ class ConferenceSolverOptions
 
         return $this;
     }
-
 
     /**
      * @return array

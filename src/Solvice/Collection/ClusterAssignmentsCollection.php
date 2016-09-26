@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Assignment\ClusterAssignment;
 
 /**
- * Class ClusterAssignmentsCollection
- *
- * @package Solvice
+ * Class ClusterAssignmentsCollection.
  */
 class ClusterAssignmentsCollection extends AssignmentsCollection
 {
@@ -32,7 +30,7 @@ class ClusterAssignmentsCollection extends AssignmentsCollection
      */
     public static function fromArray($assignments)
     {
-        $collection = new static;
+        $collection = new static();
 
         foreach ($assignments as $assignment) {
             $collection->add(ClusterAssignment::fromArray($assignment));
@@ -40,5 +38,4 @@ class ClusterAssignmentsCollection extends AssignmentsCollection
 
         return $collection;
     }
-
 }

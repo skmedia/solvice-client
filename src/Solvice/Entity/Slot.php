@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class Slot
- *
- * @package Solvice
+ * Class Slot.
  */
 class Slot
 {
@@ -132,7 +130,7 @@ class Slot
         return [
             'name' => $this->getName(),
             'index' => $this->getIndex(),
-            'date' => $this->getDate()
+            'date' => $this->getDate(),
         ];
     }
 }

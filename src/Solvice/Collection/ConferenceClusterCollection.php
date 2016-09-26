@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\ConferenceCluster;
 
 /**
- * Class ConferenceClusterCollection
- *
- * @package Solvice
+ * Class ConferenceClusterCollection.
  */
 class ConferenceClusterCollection extends Collection
 {
@@ -34,6 +32,7 @@ class ConferenceClusterCollection extends Collection
         foreach ($this as $item) {
             $items[] = $item->toArray();
         }
+
         return $items;
     }
 }

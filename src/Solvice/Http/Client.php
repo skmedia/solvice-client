@@ -2,7 +2,7 @@
 
 namespace Solvice\Http;
 
-use \GuzzleHttp\Client as GuzzleClient;
+use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use Solvice\Exception\SolviceRequestException;
@@ -12,9 +12,7 @@ use Solvice\Solver\Response;
 use Solvice\Solver\Solver;
 
 /**
- * Class Client
- *
- * @package Solvice\Http
+ * Class Client.
  */
 class Client
 {
@@ -104,8 +102,6 @@ class Client
             $jobData['solver'],
             $jobData
         );
-
-        return $jobData;
     }
 
     /**
@@ -114,12 +110,14 @@ class Client
      * @param array $options
      *
      * @return string
+     *
      * @throws SolviceRequestException
      */
     private function request($method, $path, $options = [])
     {
         try {
             $response = $this->client->request($method, $path, $options);
+
             return $response->getBody()->getContents();
         } catch (ClientException $e) {
             throw  (new SolviceRequestException())

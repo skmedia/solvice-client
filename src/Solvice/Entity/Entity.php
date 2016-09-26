@@ -5,9 +5,7 @@ namespace Solvice\Entity;
 use Solvice\Collection\KeywordCollection;
 
 /**
- * Class Entity
- *
- * @package Solvice\Entity
+ * Class Entity.
  */
 class Entity
 {
@@ -63,7 +61,7 @@ class Entity
     {
         $this->name = $name;
         $this->clusterType = $clusterType;
-        $this->keywords = $keywordCollection ?: new KeywordCollection;
+        $this->keywords = $keywordCollection ?: new KeywordCollection();
     }
 
     /**

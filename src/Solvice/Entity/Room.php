@@ -5,9 +5,7 @@ namespace Solvice\Entity;
 use Solvice\Collection\AttributeCollection;
 
 /**
- * Class Room
- *
- * @package Solvice
+ * Class Room.
  */
 class Room
 {
@@ -27,8 +25,8 @@ class Room
     private $attributes;
 
     /**
-     * @param                   $name
-     * @param                   $capacity
+     * @param                     $name
+     * @param                     $capacity
      * @param AttributeCollection $attributes
      *
      * @return static

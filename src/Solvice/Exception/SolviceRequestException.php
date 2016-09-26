@@ -38,5 +38,4 @@ class SolviceRequestException extends \Exception
     {
         $this->error = SolviceError::fromJson($message);
     }
-
 }

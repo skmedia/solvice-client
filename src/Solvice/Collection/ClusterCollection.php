@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Cluster;
 
 /**
- * Class ClusterCollection
- *
- * @package Solvice
+ * Class ClusterCollection.
  */
 class ClusterCollection extends Collection
 {
@@ -32,7 +30,7 @@ class ClusterCollection extends Collection
      */
     public static function fromArray($data)
     {
-        $collection = new static;
+        $collection = new static();
         foreach ($data['clusters'] as $cluster) {
             $collection->add(Cluster::make(
                 $cluster['name'],
@@ -40,6 +38,7 @@ class ClusterCollection extends Collection
                 $cluster['size']
             ));
         }
+
         return $collection;
     }
 }

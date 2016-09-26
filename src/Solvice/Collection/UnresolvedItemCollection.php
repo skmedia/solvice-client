@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\UnresolvedItem;
 
 /**
- * Class EntityCollection
- *
- * @package Solvice
+ * Class EntityCollection.
  */
 class UnresolvedItemCollection extends Collection
 {
@@ -46,7 +44,7 @@ class UnresolvedItemCollection extends Collection
      */
     public static function fromArray($items)
     {
-        $collection = new static;
+        $collection = new static();
         foreach ($items as $entity) {
             $collection->add(UnresolvedItem::make(
                 $entity['name'],
@@ -54,6 +52,7 @@ class UnresolvedItemCollection extends Collection
                 $entity['level']
             ));
         }
+
         return $collection;
     }
 }

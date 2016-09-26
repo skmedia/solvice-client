@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Entity;
 
 /**
- * Class EntityCollection
- *
- * @package Solvice
+ * Class EntityCollection.
  */
 class EntityCollection extends Collection
 {
@@ -32,13 +30,14 @@ class EntityCollection extends Collection
      */
     public static function fromArray($data)
     {
-        $collection = new static;
+        $collection = new static();
         foreach ($data['entities'] as $entity) {
             $collection->add(Entity::make(
                 $entity['name'],
                 $entity['cluster_type']
             ));
         }
+
         return $collection;
     }
 }

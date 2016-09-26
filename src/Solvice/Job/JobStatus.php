@@ -3,9 +3,7 @@
 namespace Solvice\Job;
 
 /**
- * Class JobStatus
- *
- * @package Solvice\Job
+ * Class JobStatus.
  */
 class JobStatus
 {

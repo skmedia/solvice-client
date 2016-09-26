@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class UnresolvedItemLevel
- *
- * @package Solvice\Entity
+ * Class UnresolvedItemLevel.
  */
 class UnresolvedItemLevel
 {

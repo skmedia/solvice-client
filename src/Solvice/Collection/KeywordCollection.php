@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\Keyword;
 
 /**
- * Class KeywordCollection
- *
- * @package Solvice
+ * Class KeywordCollection.
  */
 class KeywordCollection extends Collection
 {
@@ -19,7 +17,7 @@ class KeywordCollection extends Collection
     public function add($keyword)
     {
         if (!($keyword instanceof Keyword)) {
-            throw new \InvalidArgumentException('Not a keyword: ' . get_class($keyword));
+            throw new \InvalidArgumentException('Not a keyword: '.get_class($keyword));
         }
 
         return parent::add($keyword);
@@ -32,7 +30,7 @@ class KeywordCollection extends Collection
      */
     public static function fromArray($items)
     {
-        $collection = new static;
+        $collection = new static();
         foreach ($items as $item) {
             $collection->add(Keyword::make($item['name'], $item['priority']));
         }
@@ -47,7 +45,7 @@ class KeywordCollection extends Collection
      */
     public static function fromValues($items)
     {
-        $collection = new static;
+        $collection = new static();
         foreach ($items as $item) {
             $collection->add(Keyword::make($item));
         }

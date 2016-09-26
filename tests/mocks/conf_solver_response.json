@@ -1,42 +1,324 @@
 {
-  "id": "57cd362dfad61bbed8927595",
+  "id": "57d699ee00f61bbb4ad85bf9",
   "score": {
     "hardScore": 0,
-    "mediumScore": -2,
-    "softScore": 0,
+    "mediumScore": -8,
+    "softScore": -168,
     "feasible": true
   },
   "unresolved": [
     {
       "name": "Unassigned Cluster",
-      "value": -2,
+      "value": -8,
       "level": "SOFT"
     },
     {
       "name": "As Early As Possible",
-      "value": 0,
+      "value": -63,
+      "level": "SOFT"
+    },
+    {
+      "name": "Spread Types Conflict",
+      "value": -21,
+      "level": "SOFT"
+    },
+    {
+      "name": "Spread Presenter Conflict",
+      "value": -84,
       "level": "SOFT"
     }
   ],
   "status": "SOLVED",
-  "username": "username",
+  "username": "earli",
   "solver": "CONF",
   "options": {
     "cluster_size": 0,
-    "max_chair": 0
+    "max_chair": 1
   },
   "solve_duration": 10,
-  "solve_started": "2016-09-05T09:09:01.648",
+  "solve_started": "2016-09-12T12:05:02.662",
   "presenters": [
     {
+      "name": "P0"
+    },
+    {
       "name": "P1"
+    },
+    {
+      "name": "P2"
+    },
+    {
+      "name": "P3"
+    },
+    {
+      "name": "P4"
+    },
+    {
+      "name": "P5"
+    },
+    {
+      "name": "P6"
+    },
+    {
+      "name": "P7"
+    },
+    {
+      "name": "P8"
+    },
+    {
+      "name": "P9"
+    },
+    {
+      "name": "P10"
+    },
+    {
+      "name": "P11"
+    },
+    {
+      "name": "P12"
+    },
+    {
+      "name": "P13"
+    },
+    {
+      "name": "P14"
+    },
+    {
+      "name": "P15"
+    },
+    {
+      "name": "P16"
+    },
+    {
+      "name": "P17"
+    },
+    {
+      "name": "P18"
+    },
+    {
+      "name": "P19"
+    },
+    {
+      "name": "P20"
+    },
+    {
+      "name": "P21"
+    },
+    {
+      "name": "P22"
+    },
+    {
+      "name": "P23"
+    },
+    {
+      "name": "P24"
+    },
+    {
+      "name": "P25"
+    },
+    {
+      "name": "P26"
+    },
+    {
+      "name": "P27"
+    },
+    {
+      "name": "P28"
+    },
+    {
+      "name": "P29"
     }
   ],
   "clusters": [
     {
-      "name": "Session Cluster 1",
-      "population": 10,
+      "name": "clust 0",
+      "population": 75,
       "presenters": [
+        {
+          "name": "P13"
+        },
+        {
+          "name": "P9"
+        },
+        {
+          "name": "P15"
+        },
+        {
+          "name": "P24"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 1",
+      "population": 52,
+      "presenters": [
+        {
+          "name": "P2"
+        },
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P18"
+        },
+        {
+          "name": "P5"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 2",
+      "population": 68,
+      "presenters": [
+        {
+          "name": "P23"
+        },
+        {
+          "name": "P24"
+        },
+        {
+          "name": "P14"
+        },
+        {
+          "name": "P27"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 3",
+      "population": 76,
+      "presenters": [
+        {
+          "name": "P11"
+        },
+        {
+          "name": "P20"
+        },
+        {
+          "name": "P23"
+        },
+        {
+          "name": "P14"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 4",
+      "population": 70,
+      "presenters": [
+        {
+          "name": "P18"
+        },
+        {
+          "name": "P12"
+        },
+        {
+          "name": "P21"
+        },
+        {
+          "name": "P28"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 5",
+      "population": 55,
+      "presenters": [
+        {
+          "name": "P4"
+        },
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P27"
+        },
+        {
+          "name": "P10"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 6",
+      "population": 52,
+      "presenters": [
+        {
+          "name": "P8"
+        },
+        {
+          "name": "P18"
+        },
+        {
+          "name": "P1"
+        },
+        {
+          "name": "P28"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 7",
+      "population": 68,
+      "presenters": [
+        {
+          "name": "P28"
+        },
+        {
+          "name": "P9"
+        },
+        {
+          "name": "P11"
+        },
+        {
+          "name": "P26"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 8",
+      "population": 56,
+      "presenters": [
+        {
+          "name": "P10"
+        },
+        {
+          "name": "P8"
+        },
+        {
+          "name": "P24"
+        },
         {
           "name": "P1"
         }
@@ -44,13 +326,379 @@
       "attributes": [
         "Flipboard"
       ],
-      "cluster_type": "single_paper"
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 9",
+      "population": 59,
+      "presenters": [
+        {
+          "name": "P2"
+        },
+        {
+          "name": "P14"
+        },
+        {
+          "name": "P22"
+        },
+        {
+          "name": "P9"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 10",
+      "population": 52,
+      "presenters": [
+        {
+          "name": "P22"
+        },
+        {
+          "name": "P3"
+        },
+        {
+          "name": "P20"
+        },
+        {
+          "name": "P8"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 11",
+      "population": 79,
+      "presenters": [
+        {
+          "name": "P12"
+        },
+        {
+          "name": "P1"
+        },
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P10"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 12",
+      "population": 60,
+      "presenters": [
+        {
+          "name": "P24"
+        },
+        {
+          "name": "P15"
+        },
+        {
+          "name": "P19"
+        },
+        {
+          "name": "P25"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 13",
+      "population": 55,
+      "presenters": [
+        {
+          "name": "P4"
+        },
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P13"
+        },
+        {
+          "name": "P9"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 14",
+      "population": 64,
+      "presenters": [
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P6"
+        },
+        {
+          "name": "P23"
+        },
+        {
+          "name": "P10"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 15",
+      "population": 55,
+      "presenters": [
+        {
+          "name": "P11"
+        },
+        {
+          "name": "P23"
+        },
+        {
+          "name": "P19"
+        },
+        {
+          "name": "P20"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 16",
+      "population": 53,
+      "presenters": [
+        {
+          "name": "P21"
+        },
+        {
+          "name": "P26"
+        },
+        {
+          "name": "P0"
+        },
+        {
+          "name": "P16"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 17",
+      "population": 57,
+      "presenters": [
+        {
+          "name": "P22"
+        },
+        {
+          "name": "P19"
+        },
+        {
+          "name": "P12"
+        },
+        {
+          "name": "P2"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 18",
+      "population": 60,
+      "presenters": [
+        {
+          "name": "P17"
+        },
+        {
+          "name": "P20"
+        },
+        {
+          "name": "P19"
+        },
+        {
+          "name": "P13"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 19",
+      "population": 65,
+      "presenters": [
+        {
+          "name": "P11"
+        },
+        {
+          "name": "P4"
+        },
+        {
+          "name": "P13"
+        },
+        {
+          "name": "P22"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 20",
+      "population": 61,
+      "presenters": [
+        {
+          "name": "P13"
+        },
+        {
+          "name": "P19"
+        },
+        {
+          "name": "P12"
+        },
+        {
+          "name": "P22"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 21",
+      "population": 52,
+      "presenters": [
+        {
+          "name": "P13"
+        },
+        {
+          "name": "P28"
+        },
+        {
+          "name": "P0"
+        },
+        {
+          "name": "P7"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 22",
+      "population": 68,
+      "presenters": [
+        {
+          "name": "P7"
+        },
+        {
+          "name": "P23"
+        },
+        {
+          "name": "P11"
+        },
+        {
+          "name": "P25"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 23",
+      "population": 75,
+      "presenters": [
+        {
+          "name": "P16"
+        },
+        {
+          "name": "P10"
+        },
+        {
+          "name": "P27"
+        },
+        {
+          "name": "P4"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
+    },
+    {
+      "name": "clust 24",
+      "population": 67,
+      "presenters": [
+        {
+          "name": "P12"
+        },
+        {
+          "name": "P4"
+        },
+        {
+          "name": "P24"
+        },
+        {
+          "name": "P13"
+        }
+      ],
+      "attributes": [
+        "Flipboard"
+      ],
+      "cluster_type": "A"
     }
   ],
   "rooms": [
     {
-      "name": "room_1",
-      "capacity": 10,
+      "name": "room 0",
+      "capacity": 98,
+      "attributes": [
+        "Flipboard"
+      ]
+    },
+    {
+      "name": "room 1",
+      "capacity": 97,
+      "attributes": [
+        "Flipboard"
+      ]
+    },
+    {
+      "name": "room 2",
+      "capacity": 101,
       "attributes": [
         "Flipboard"
       ]
@@ -58,35 +706,728 @@
   ],
   "slots": [
     {
-      "name": "9h-10h_2018-09-01",
+      "name": "9h-10h2016-09-12",
       "index": 0,
-      "date": "2018-09-01"
+      "date": "2016-09-12"
+    },
+    {
+      "name": "10h-11h2016-09-12",
+      "index": 1,
+      "date": "2016-09-12"
+    },
+    {
+      "name": "11h-12h2016-09-12",
+      "index": 2,
+      "date": "2016-09-12"
+    },
+    {
+      "name": "13h-14h2016-09-12",
+      "index": 3,
+      "date": "2016-09-12"
+    },
+    {
+      "name": "14h-15h2016-09-12",
+      "index": 4,
+      "date": "2016-09-12"
+    },
+    {
+      "name": "15h-16h2016-09-12",
+      "index": 5,
+      "date": "2016-09-12"
+    },
+    {
+      "name": "16h-17h2016-09-12",
+      "index": 6,
+      "date": "2016-09-12"
     }
   ],
   "room_slots": [
     {
-      "name": "room_19h-10h_2018-09-01",
+      "name": "room 0 9h-10h2016-09-12",
       "room": {
-        "name": "room_1",
-        "capacity": 10,
+        "name": "room 0",
+        "capacity": 98,
         "attributes": [
           "Flipboard"
         ]
       },
       "slot": {
-        "name": "9h-10h_2018-09-01",
+        "name": "9h-10h2016-09-12",
         "index": 0,
-        "date": "2018-09-01"
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 10h-11h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "10h-11h2016-09-12",
+        "index": 1,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 11h-12h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "11h-12h2016-09-12",
+        "index": 2,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 13h-14h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "13h-14h2016-09-12",
+        "index": 3,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 14h-15h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "14h-15h2016-09-12",
+        "index": 4,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 15h-16h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "15h-16h2016-09-12",
+        "index": 5,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 0 16h-17h2016-09-12",
+      "room": {
+        "name": "room 0",
+        "capacity": 98,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "16h-17h2016-09-12",
+        "index": 6,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 9h-10h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "9h-10h2016-09-12",
+        "index": 0,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 10h-11h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "10h-11h2016-09-12",
+        "index": 1,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 11h-12h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "11h-12h2016-09-12",
+        "index": 2,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 13h-14h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "13h-14h2016-09-12",
+        "index": 3,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 14h-15h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "14h-15h2016-09-12",
+        "index": 4,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 15h-16h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "15h-16h2016-09-12",
+        "index": 5,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 1 16h-17h2016-09-12",
+      "room": {
+        "name": "room 1",
+        "capacity": 97,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "16h-17h2016-09-12",
+        "index": 6,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 9h-10h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "9h-10h2016-09-12",
+        "index": 0,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 10h-11h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "10h-11h2016-09-12",
+        "index": 1,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 11h-12h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "11h-12h2016-09-12",
+        "index": 2,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 13h-14h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "13h-14h2016-09-12",
+        "index": 3,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 14h-15h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "14h-15h2016-09-12",
+        "index": 4,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 15h-16h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "15h-16h2016-09-12",
+        "index": 5,
+        "date": "2016-09-12"
+      }
+    },
+    {
+      "name": "room 2 16h-17h2016-09-12",
+      "room": {
+        "name": "room 2",
+        "capacity": 101,
+        "attributes": [
+          "Flipboard"
+        ]
+      },
+      "slot": {
+        "name": "16h-17h2016-09-12",
+        "index": 6,
+        "date": "2016-09-12"
       }
     }
   ],
   "assignments": [
     {
+      "id": 1,
       "id": 0,
       "cluster": {
-        "name": "Session Cluster 1",
-        "population": 10,
+        "name": "clust 0",
+        "population": 75,
         "presenters": [
+          {
+            "name": "P13"
+          },
+          {
+            "name": "P9"
+          },
+          {
+            "name": "P15"
+          },
+          {
+            "name": "P24"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P15"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 9h-10h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "9h-10h2016-09-12",
+          "index": 0,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "id": 1,
+      "cluster": {
+        "name": "clust 1",
+        "population": 52,
+        "presenters": [
+          {
+            "name": "P2"
+          },
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P18"
+          },
+          {
+            "name": "P5"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P16"
+      },
+      "is_locked": false,
+      "is_reserved": false
+    },
+    {
+      "id": 3,
+      "id": 2,
+      "cluster": {
+        "name": "clust 2",
+        "population": 68,
+        "presenters": [
+          {
+            "name": "P23"
+          },
+          {
+            "name": "P24"
+          },
+          {
+            "name": "P14"
+          },
+          {
+            "name": "P27"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P23"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 11h-12h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "11h-12h2016-09-12",
+          "index": 2,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "id": 3,
+      "cluster": {
+        "name": "clust 3",
+        "population": 76,
+        "presenters": [
+          {
+            "name": "P11"
+          },
+          {
+            "name": "P20"
+          },
+          {
+            "name": "P23"
+          },
+          {
+            "name": "P14"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P14"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 15h-16h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "15h-16h2016-09-12",
+          "index": 5,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "id": 4,
+      "cluster": {
+        "name": "clust 4",
+        "population": 70,
+        "presenters": [
+          {
+            "name": "P18"
+          },
+          {
+            "name": "P12"
+          },
+          {
+            "name": "P21"
+          },
+          {
+            "name": "P28"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P21"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 14h-15h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "14h-15h2016-09-12",
+          "index": 4,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "id": 5,
+      "cluster": {
+        "name": "clust 5",
+        "population": 55,
+        "presenters": [
+          {
+            "name": "P4"
+          },
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P27"
+          },
+          {
+            "name": "P10"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P4"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 15h-16h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "15h-16h2016-09-12",
+          "index": 5,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "id": 6,
+      "cluster": {
+        "name": "clust 6",
+        "population": 52,
+        "presenters": [
+          {
+            "name": "P8"
+          },
+          {
+            "name": "P18"
+          },
+          {
+            "name": "P1"
+          },
+          {
+            "name": "P28"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P8"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 11h-12h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "11h-12h2016-09-12",
+          "index": 2,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "id": 7,
+      "cluster": {
+        "name": "clust 7",
+        "population": 68,
+        "presenters": [
+          {
+            "name": "P28"
+          },
+          {
+            "name": "P9"
+          },
+          {
+            "name": "P11"
+          },
+          {
+            "name": "P26"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P28"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 16h-17h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "16h-17h2016-09-12",
+          "index": 6,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "id": 8,
+      "cluster": {
+        "name": "clust 8",
+        "population": 56,
+        "presenters": [
+          {
+            "name": "P10"
+          },
+          {
+            "name": "P8"
+          },
+          {
+            "name": "P24"
+          },
           {
             "name": "P1"
           }
@@ -94,10 +1435,716 @@
         "attributes": [
           "Flipboard"
         ],
-        "cluster_type": "single_paper"
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P10"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 13h-14h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "13h-14h2016-09-12",
+          "index": 3,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "id": 9,
+      "cluster": {
+        "name": "clust 9",
+        "population": 59,
+        "presenters": [
+          {
+            "name": "P2"
+          },
+          {
+            "name": "P14"
+          },
+          {
+            "name": "P22"
+          },
+          {
+            "name": "P9"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P9"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 10h-11h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "10h-11h2016-09-12",
+          "index": 1,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "id": 10,
+      "cluster": {
+        "name": "clust 10",
+        "population": 52,
+        "presenters": [
+          {
+            "name": "P22"
+          },
+          {
+            "name": "P3"
+          },
+          {
+            "name": "P20"
+          },
+          {
+            "name": "P8"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P3"
+      },
+      "is_locked": false,
+      "is_reserved": false
+    },
+    {
+      "id": 12,
+      "id": 11,
+      "cluster": {
+        "name": "clust 11",
+        "population": 79,
+        "presenters": [
+          {
+            "name": "P12"
+          },
+          {
+            "name": "P1"
+          },
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P10"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
       },
       "chair": {
         "name": "P1"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 9h-10h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "9h-10h2016-09-12",
+          "index": 0,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "id": 12,
+      "cluster": {
+        "name": "clust 12",
+        "population": 60,
+        "presenters": [
+          {
+            "name": "P24"
+          },
+          {
+            "name": "P15"
+          },
+          {
+            "name": "P19"
+          },
+          {
+            "name": "P25"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P24"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 14h-15h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "14h-15h2016-09-12",
+          "index": 4,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "id": 13,
+      "cluster": {
+        "name": "clust 13",
+        "population": 55,
+        "presenters": [
+          {
+            "name": "P4"
+          },
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P13"
+          },
+          {
+            "name": "P9"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P13"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 14h-15h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "14h-15h2016-09-12",
+          "index": 4,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "id": 14,
+      "cluster": {
+        "name": "clust 14",
+        "population": 64,
+        "presenters": [
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P6"
+          },
+          {
+            "name": "P23"
+          },
+          {
+            "name": "P10"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P6"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 16h-17h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "16h-17h2016-09-12",
+          "index": 6,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "id": 15,
+      "cluster": {
+        "name": "clust 15",
+        "population": 55,
+        "presenters": [
+          {
+            "name": "P11"
+          },
+          {
+            "name": "P23"
+          },
+          {
+            "name": "P19"
+          },
+          {
+            "name": "P20"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P19"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 9h-10h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "9h-10h2016-09-12",
+          "index": 0,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "id": 16,
+      "cluster": {
+        "name": "clust 16",
+        "population": 53,
+        "presenters": [
+          {
+            "name": "P21"
+          },
+          {
+            "name": "P26"
+          },
+          {
+            "name": "P0"
+          },
+          {
+            "name": "P16"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P16"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 13h-14h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "13h-14h2016-09-12",
+          "index": 3,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "id": 17,
+      "cluster": {
+        "name": "clust 17",
+        "population": 57,
+        "presenters": [
+          {
+            "name": "P22"
+          },
+          {
+            "name": "P19"
+          },
+          {
+            "name": "P12"
+          },
+          {
+            "name": "P2"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P2"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 13h-14h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "13h-14h2016-09-12",
+          "index": 3,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "id": 18,
+      "cluster": {
+        "name": "clust 18",
+        "population": 60,
+        "presenters": [
+          {
+            "name": "P17"
+          },
+          {
+            "name": "P20"
+          },
+          {
+            "name": "P19"
+          },
+          {
+            "name": "P13"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P20"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 10h-11h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "10h-11h2016-09-12",
+          "index": 1,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "id": 19,
+      "cluster": {
+        "name": "clust 19",
+        "population": 65,
+        "presenters": [
+          {
+            "name": "P11"
+          },
+          {
+            "name": "P4"
+          },
+          {
+            "name": "P13"
+          },
+          {
+            "name": "P22"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P11"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 1 11h-12h2016-09-12",
+        "room": {
+          "name": "room 1",
+          "capacity": 97,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "11h-12h2016-09-12",
+          "index": 2,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "id": 20,
+      "cluster": {
+        "name": "clust 20",
+        "population": 61,
+        "presenters": [
+          {
+            "name": "P13"
+          },
+          {
+            "name": "P19"
+          },
+          {
+            "name": "P12"
+          },
+          {
+            "name": "P22"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P12"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 16h-17h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "16h-17h2016-09-12",
+          "index": 6,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "id": 21,
+      "cluster": {
+        "name": "clust 21",
+        "population": 52,
+        "presenters": [
+          {
+            "name": "P13"
+          },
+          {
+            "name": "P28"
+          },
+          {
+            "name": "P0"
+          },
+          {
+            "name": "P7"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P0"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 2 15h-16h2016-09-12",
+        "room": {
+          "name": "room 2",
+          "capacity": 101,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "15h-16h2016-09-12",
+          "index": 5,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "id": 22,
+      "cluster": {
+        "name": "clust 22",
+        "population": 68,
+        "presenters": [
+          {
+            "name": "P7"
+          },
+          {
+            "name": "P23"
+          },
+          {
+            "name": "P11"
+          },
+          {
+            "name": "P25"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P7"
+      },
+      "is_locked": false,
+      "is_reserved": false
+    },
+    {
+      "id": 24,
+      "id": 23,
+      "cluster": {
+        "name": "clust 23",
+        "population": 75,
+        "presenters": [
+          {
+            "name": "P16"
+          },
+          {
+            "name": "P10"
+          },
+          {
+            "name": "P27"
+          },
+          {
+            "name": "P4"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P27"
+      },
+      "is_locked": false,
+      "is_reserved": false,
+      "room_slot": {
+        "name": "room 0 10h-11h2016-09-12",
+        "room": {
+          "name": "room 0",
+          "capacity": 98,
+          "attributes": [
+            "Flipboard"
+          ]
+        },
+        "slot": {
+          "name": "10h-11h2016-09-12",
+          "index": 1,
+          "date": "2016-09-12"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "id": 24,
+      "cluster": {
+        "name": "clust 24",
+        "population": 67,
+        "presenters": [
+          {
+            "name": "P12"
+          },
+          {
+            "name": "P4"
+          },
+          {
+            "name": "P24"
+          },
+          {
+            "name": "P13"
+          }
+        ],
+        "attributes": [
+          "Flipboard"
+        ],
+        "cluster_type": "A"
+      },
+      "chair": {
+        "name": "P13"
       },
       "is_locked": false,
       "is_reserved": false

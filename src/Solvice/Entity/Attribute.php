@@ -22,7 +22,7 @@ class Attribute
     /**
      * Entity constructor.
      *
-     * @param                   $name
+     * @param   $name
      */
     public function __construct($name)
     {

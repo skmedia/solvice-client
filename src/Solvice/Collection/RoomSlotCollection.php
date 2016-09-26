@@ -5,9 +5,7 @@ namespace Solvice\Collection;
 use Solvice\Entity\RoomSlot;
 
 /**
- * Class RoomSlotCollection
- *
- * @package Solvice
+ * Class RoomSlotCollection.
  */
 class RoomSlotCollection extends Collection
 {
@@ -19,7 +17,7 @@ class RoomSlotCollection extends Collection
     public function add($item)
     {
         if (!($item instanceof RoomSlot)) {
-            throw new \InvalidArgumentException('Not a RoomSlot: ' . get_class($item));
+            throw new \InvalidArgumentException('Not a RoomSlot: '.get_class($item));
         }
 
         return parent::add($item);

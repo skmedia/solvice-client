@@ -2,3 +2,4 @@
 .idea
 vendor
 run.php
+.php_cs.cache

@@ -3,9 +3,7 @@
 namespace Solvice\Solver;
 
 /**
- * Class Response
- *
- * @package Solvice\Solver
+ * Class Response.
  */
 class Response
 {

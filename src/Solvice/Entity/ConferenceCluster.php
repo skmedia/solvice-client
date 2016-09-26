@@ -6,9 +6,7 @@ use Solvice\Collection\AttributeCollection;
 use Solvice\Collection\PresenterCollection;
 
 /**
- * Class ConferenceCluster
- *
- * @package Solvice
+ * Class ConferenceCluster.
  */
 class ConferenceCluster
 {
@@ -56,7 +54,6 @@ class ConferenceCluster
         return new static($name, $clusterType, $population, $presenters,
             $attributes);
     }
-
 
     /**
      * ConferenceCluster constructor.

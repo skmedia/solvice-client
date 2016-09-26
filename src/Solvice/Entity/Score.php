@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class Score
- *
- * @package Solvice\Entity
+ * Class Score.
  */
 class Score
 {
@@ -50,9 +48,9 @@ class Score
     public static function fromArray($array)
     {
         return new static(
-            $array['hardScore'] ? $array['hardScore']: 0,
-            isset($array['mediumScore']) ? $array['mediumScore']: 0,
-            $array['softScore'] ? $array['softScore']: 0,
+            $array['hardScore'] ? $array['hardScore'] : 0,
+            isset($array['mediumScore']) ? $array['mediumScore'] : 0,
+            $array['softScore'] ? $array['softScore'] : 0,
             $array['feasible']
         );
     }

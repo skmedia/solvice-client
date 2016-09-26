@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class SolviceError
- *
- * @package Solvice\Entity
+ * Class SolviceError.
  */
 class SolviceError
 {
@@ -141,6 +139,4 @@ class SolviceError
      * @var
      */
     private $exception;
-
-
 }

@@ -10,9 +10,7 @@ use Solvice\Entity\Entity;
 use Solvice\Exception\InvalidSolverException;
 
 /**
- * Class ClusterSolver
- *
- * @package Solvice\Solver
+ * Class ClusterSolver.
  */
 class ClusterSolver extends Solver
 {
@@ -203,14 +201,14 @@ class ClusterSolver extends Solver
         $r = array_diff($uniqueEntityClusterTypes, $uniqueClusterClusterTypes);
         if ($r) {
             throw new InvalidSolverException(
-                'The following cluster types are defined in the entities but not in the clusters: ' . implode(', ', $r)
+                'The following cluster types are defined in the entities but not in the clusters: '.implode(', ', $r)
             );
         }
 
         $r = array_diff($uniqueClusterClusterTypes, $uniqueEntityClusterTypes);
         if ($r) {
             throw new InvalidSolverException(
-                'The following cluster types are defined in the clusters but not in the entities: ' . implode(', ', $r)
+                'The following cluster types are defined in the clusters but not in the entities: '.implode(', ', $r)
             );
         }
     }

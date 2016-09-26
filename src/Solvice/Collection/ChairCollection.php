@@ -2,12 +2,12 @@
 
 namespace Solvice\Collection;
 
-use Solvice\Entity\Presenter;
+use Solvice\Entity\Chair;
 
 /**
- * Class PresenterCollection.
+ * Class ChairCollection.
  */
-class PresenterCollection extends Collection
+class ChairCollection extends Collection
 {
     /**
      * @param Presenter $item
@@ -16,8 +16,8 @@ class PresenterCollection extends Collection
      */
     public function add($item)
     {
-        if (!($item instanceof Presenter)) {
-            throw new \InvalidArgumentException('Not an Presenter: '.get_class($item));
+        if (!($item instanceof Chair)) {
+            throw new \InvalidArgumentException('Not an Chair: '.get_class($item));
         }
 
         return parent::add($item);
@@ -32,7 +32,7 @@ class PresenterCollection extends Collection
     {
         $collection = new static();
         foreach ($items as $item) {
-            $collection->add(Presenter::make($item['name']));
+            $collection->add(Chair::make($item['name']));
         }
 
         return $collection;
@@ -47,7 +47,7 @@ class PresenterCollection extends Collection
     {
         $collection = new static();
         foreach ($items as $item) {
-            $collection->add(Presenter::make($item));
+            $collection->add(Chair::make($item));
         }
 
         return $collection;

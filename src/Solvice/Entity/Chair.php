@@ -3,9 +3,9 @@
 namespace Solvice\Entity;
 
 /**
- * Class Presenter.
+ * Class Chair.
  */
-class Presenter
+class Chair
 {
     /**
      * @var
@@ -20,6 +20,20 @@ class Presenter
     public static function make($name)
     {
         return new static($name);
+    }
+
+    /**
+     * @param $array
+     *
+     * @return static
+     */
+    public static function fromArray($array)
+    {
+        if (!empty($array['name'])) {
+            return new static($array['name']);
+        }
+
+        return new static('');
     }
 
     /**

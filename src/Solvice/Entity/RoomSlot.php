@@ -3,14 +3,10 @@
 namespace Solvice\Entity;
 
 /**
- * Class RoomSlot
- *
- * @package Solvice
+ * Class RoomSlot.
  */
 /**
- * Class RoomSlot
- *
- * @package Solvice\Entity
+ * Class RoomSlot.
  */
 class RoomSlot
 {

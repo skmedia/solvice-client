@@ -6,9 +6,7 @@ use Solvice\Entity\Cluster;
 use Solvice\Entity\Entity;
 
 /**
- * Class ClusterAssignment
- *
- * @package Solvice\Entity\Assignment
+ * Class ClusterAssignment.
  */
 class ClusterAssignment
 {
@@ -25,7 +23,6 @@ class ClusterAssignment
     /**
      * @var Cluster
      */
-
     private $cluster;
 
     /**

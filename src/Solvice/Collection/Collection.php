@@ -6,9 +6,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Inflector\Inflector;
 
 /**
- * Class Collection
- *
- * @package Solvice
+ * Class Collection.
  */
 abstract class Collection extends ArrayCollection
 {
@@ -23,7 +21,7 @@ abstract class Collection extends ArrayCollection
             $items = func_get_args();
         }
 
-        $collection = new static;
+        $collection = new static();
         foreach ($items as $item) {
             $collection->add($item);
         }
@@ -40,6 +38,7 @@ abstract class Collection extends ArrayCollection
         foreach ($this as $item) {
             $items[] = $item->toArray();
         }
+
         return $items;
     }
 
@@ -49,10 +48,11 @@ abstract class Collection extends ArrayCollection
      *
      * @return $this
      */
-    public function joinBy($property, $char = ', ') {
+    public function joinBy($property, $char = ', ')
+    {
+        $collection = $this->map(function ($item) use ($property) {
+            $getter = 'get'.Inflector::classify($property);
 
-        $collection = $this->map(function($item) use ($property) {
-            $getter = 'get' . Inflector::classify($property);
             return $item->{$getter}();
         });
 

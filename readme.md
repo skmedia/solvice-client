@@ -1,16 +1,25 @@
 # Solvice client
 ---
 
+## Installation
+
+composer require skmedia/solvice-client
+
+## Create a client
+
+```
+$solviceClient = new SolviceClient('https://api.solvice.io', 'username', 'password');
+```
+
+## Create a cluster solver
+
 ```
 use Solvice\Http\Client as SolviceClient
 use Solvice\Collection as SolviceCollection;
 use Solvice\Entity as SolviceEntity;
 use Solvice\Solver as SolviceSolver;
 
-$solviceClient = new SolviceClient('https://api.solvice.io', 'username', 'password');
-
 $clusterSolver = new SolviceSolver\ClusterSolver();
-
 $clusterSolver->addCluster(SolviceEntity\Cluster::make('Cluster 1', 'single_paper', 3));
 $clusterSolver->addCluster(SolviceEntity\Cluster::make('Cluster 2', 'single_paper', 1));
 
@@ -59,17 +68,9 @@ $clusterSolver->addEntity(
 );
 
 $response = $solviceClient->solve($clusterSolver)
-$job = $solviceClient->fetchJob($response->getId());
-
-if ($job->isSolving()) {
-    // Job is not done yet -> requeue
-}
-
-if ($job->isSolved()) {
-    
-}
-
 ```
+
+## Create a conference solver
 
 ```
 if ($job->isSolved()) {

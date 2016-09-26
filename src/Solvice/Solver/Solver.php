@@ -5,14 +5,12 @@ namespace Solvice\Solver;
 use Solvice\Exception\InvalidSolverException;
 
 /**
- * Class Solver
- *
- * @package Solvice\Solver
+ * Class Solver.
  */
 abstract class Solver
 {
-    CONST CLUST = 'CLUST';
-    CONST CONF  = 'CONF';
+    const CLUST = 'CLUST';
+    const CONF = 'CONF';
 
     /**
      * @var
@@ -31,8 +29,6 @@ abstract class Solver
 
     /**
      * @throws InvalidSolverException
-     *
-     * @return void
      */
     abstract public function verify();
 
@@ -42,5 +38,13 @@ abstract class Solver
     public function toJson()
     {
         return json_encode($this->toArray());
+    }
+
+    /**
+     * @return mixed
+     */
+    public function toPrettyJson()
+    {
+        return json_encode($this->toArray(), JSON_PRETTY_PRINT);
     }
 }

@@ -3,11 +3,8 @@
 namespace Solvice\Collection;
 
 /**
- * Class AssignmentsCollection
- *
- * @package Solvice
+ * Class AssignmentsCollection.
  */
 class AssignmentsCollection extends Collection
 {
-
 }

@@ -5,12 +5,9 @@ namespace Solvice\Job;
 use Solvice\Collection\AssignmentsCollection;
 use Solvice\Collection\UnresolvedItemCollection;
 use Solvice\Entity\Score;
-use Solvice\Entity\UnresolvedItem;
 
 /**
- * Class Job
- *
- * @package Solvice\Job
+ * Class Job.
  */
 abstract class Job
 {
@@ -20,12 +17,17 @@ abstract class Job
     protected $id;
 
     /**
+     * @var
+     */
+    protected $username;
+
+    /**
      * @var Score
      */
     protected $score;
 
     /**
-     * @var
+     * @var UnresolvedItemCollection
      */
     protected $unresolvedItems;
 
@@ -119,12 +121,9 @@ abstract class Job
         return $this;
     }
 
-    /**
-     *
-     */
     public function getMessages()
     {
-        return $this->unresolvedItems->map(function($item) {
+        return $this->unresolvedItems->map(function ($item) {
             return $item->getName();
         });
     }
@@ -171,5 +170,25 @@ abstract class Job
     public function hasError()
     {
         return $this->status === JobStatus::ERROR;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * @param mixed $username
+     *
+     * @return $this
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+
+        return $this;
     }
 }

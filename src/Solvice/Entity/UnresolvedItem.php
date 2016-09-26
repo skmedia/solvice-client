@@ -3,9 +3,7 @@
 namespace Solvice\Entity;
 
 /**
- * Class UnresolvedItem
- *
- * @package Solvice\Entity
+ * Class UnresolvedItem.
  */
 class UnresolvedItem
 {

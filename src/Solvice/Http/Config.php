@@ -3,9 +3,7 @@
 namespace Solvice\Http;
 
 /**
- * Class Config
- *
- * @package Solvice\Http
+ * Class Config.
  */
 class Config
 {
